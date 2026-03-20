@@ -1,0 +1,88 @@
+{
+  "aula_num": 1,
+  "date": "2026-03-20",
+  "theme": "Olá! Primeiras palavras",
+  "message_perso": "Olá Yumetoo ! Bienvenue dans ta première véritable leçon de portugais européen ! Nous allons commencer en douceur avec les bases essentielles pour dire *olá* (salut) et te présenter. Prêt pour cette aventure lusitanienne ?",
+  "quiz": [
+    {
+      "question": "Nous commençons tout juste ! Peux-tu deviner ce que veut dire \"Olá\" en portugais ?",
+      "reponse": "Salut / Bonjour"
+    },
+    {
+      "question": "Dans quel pays parle-t-on le portugais européen que nous allons apprendre ?",
+      "reponse": "Portugal"
+    },
+    {
+      "question": "Combien de temps nous donnons-nous pour atteindre le niveau C1 ?",
+      "reponse": "5 ans"
+    }
+  ],
+  "vocabulaire": [
+    {
+      "portugais": "Olá",
+      "francais": "Salut, Bonjour",
+      "phonetique": "O-LA (accent sur le A)",
+      "exemple": "Olá, como está?",
+      "exemple_fr": "Salut, comment allez-vous ?"
+    },
+    {
+      "portugais": "Bom dia",
+      "francais": "Bonjour (matin)",
+      "phonetique": "BOMM DI-A",
+      "exemple": "Bom dia, Portugal!",
+      "exemple_fr": "Bonjour, Portugal !"
+    },
+    {
+      "portugais": "Boa tarde",
+      "francais": "Bonjour/Bonsoir (après-midi)",
+      "phonetique": "BO-A TAR-DEU",
+      "exemple": "Boa tarde, como está?",
+      "exemple_fr": "Bonsoir, comment allez-vous ?"
+    },
+    {
+      "portugais": "Boa noite",
+      "francais": "Bonsoir/Bonne nuit",
+      "phonetique": "BO-A NOY-TEU",
+      "exemple": "Boa noite e até amanhã",
+      "exemple_fr": "Bonne nuit et à demain"
+    },
+    {
+      "portugais": "Como está?",
+      "francais": "Comment allez-vous ?",
+      "phonetique": "CO-MOU ICH-TA",
+      "exemple": "Olá Maria, como está?",
+      "exemple_fr": "Salut Maria, comment allez-vous ?"
+    },
+    {
+      "portugais": "Bem",
+      "francais": "Bien",
+      "phonetique": "BAINGM (nasalisé)",
+      "exemple": "Estou bem, obrigado",
+      "exemple_fr": "Je vais bien, merci"
+    },
+    {
+      "portugais": "Obrigado/a",
+      "francais": "Merci",
+      "phonetique": "O-BRI-GA-DOU / O-BRI-GA-DA",
+      "exemple": "Muito obrigado pela ajuda",
+      "exemple_fr": "Merci beaucoup pour l'aide"
+    }
+  ],
+  "grammaire": {
+    "titre": "Obrigado vs Obrigada - L'accord du \"merci\"",
+    "explication": "En portugais, \"merci\" s'accorde avec celui qui parle ! Si vous êtes un homme, vous dites \"obrigado\". Si vous êtes une femme, vous dites \"obrigada\". C'est très différent du français où \"merci\" ne change jamais. \n\nExemples :\n- João (homme) dit : \"Muito obrigado\" \n- Maria (femme) dit : \"Muito obrigada\"\n\nC'est une particularité charmante du portugais - vous \"accordez\" votre remerciement avec votre propre genre !"
+  },
+  "exercice": {
+    "titre": "Premiers échanges de politesse",
+    "type": "Dialogue",
+    "consigne": "Complète ce petit dialogue avec les mots appropriés : Olá, como está, bem, obrigado/a",
+    "contenu": "A: _____, Maria! _____ ?\nB: Estou _____, _____. E tu?\nA: Também estou bem!",
+    "correction": "A: Olá, Maria! Como está?\nB: Estou bem, obrigada. E tu?\nA: Também estou bem!"
+  },
+  "culture": {
+    "titre": "Le Festival International du Chocolat d'Óbidos 2026",
+    "contenu": "Du 6 au 22 mars 2026, la magnifique ville médiévale d'Óbidos accueillera son célèbre Festival International du Chocolat ! Cette petite ville fortifiée, située à 1h de Lisbonne, se transforme en paradis gourmand où artisans chocolatiers et pâtissiers rivalisent de créativité. On y déguste des \"pastéis de nata\" au chocolat, spécialité typiquement portugaise revisitée. C'est l'occasion parfaite pour découvrir l'art de vivre portugais entre histoire et gastronomie !\n\nEXPRESSION FAMILIÈRE du jour : Au Portugal, quand quelque chose est vraiment délicieux, on dit que c'est \"bué bom\" ! (super bon). Les jeunes Portugais utilisent \"bué\" partout - \"bué fixe\" (super cool), \"bué giro\" (super sympa).",
+    "mot_culture": "bué",
+    "mot_culture_trad": "super, très, beaucoup (familier)"
+  }
+}
