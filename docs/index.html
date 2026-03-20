@@ -804,6 +804,19 @@ function renderABC(elementId, abcNotation) {
   } catch(e) { el.innerHTML = ''; }
 }
 
+function formatSelections(sel) {
+  if (!sel) return '\u2014';
+  if (typeof sel === 'string') return sel.length > 1 ? sel : '\u2014';
+  if (Array.isArray(sel)) {
+    return sel.map(s => {
+      if (typeof s === 'string') return s;
+      if (typeof s === 'object' && s !== null) return s.choix || `${s.equipe || ''} vs ${s.adversaire || ''}`.trim() || JSON.stringify(s);
+      return String(s);
+    }).join(', ');
+  }
+  return String(sel);
+}
+
 function extractYouTubeId(url) {
   if (!url) return null;
   const m = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/|youtube\.com\/embed\/)([a-zA-Z0-9_-]{11})/);
@@ -1230,14 +1243,18 @@ async function loadPronos(date) {
     const cc = (data.plan.confiance||'').toLowerCase().includes('vert') ? 'badge-vert' : (data.plan.confiance||'').toLowerCase().includes('rouge') ? 'badge-rouge' : 'badge-jaune';
     const typeLabel = (data.plan.type||'simple').charAt(0).toUpperCase() + (data.plan.type||'simple').slice(1);
     const typeIcon = typeLabel.toLowerCase().includes('combin') ? '🎯' : typeLabel.toLowerCase().includes('montante') ? '📈' : '⚽';
-    // Format selections: if string with commas or array, show as bullet list
+    // Format selections — try pronostic first, fallback to portefeuille
+    let rawSel = data.plan.selections;
+    if (!rawSel || (typeof rawSel === 'string' && rawSel.length < 2)) {
+      // Fallback: find today's bet in portefeuille
+      const todayPari = (pf && pf.paris || []).find(p => p.date === data.date);
+      if (todayPari) rawSel = todayPari.selections;
+    }
+    const selText = formatSelections(rawSel);
     let selHtml = '\u2014';
-    const rawSel = data.plan.selections || '';
-    if (Array.isArray(rawSel) && rawSel.length) {
-      selHtml = rawSel.map(s => `<div style="padding:4px 0;border-bottom:0.5px solid var(--separator)">${escHtml(s)}</div>`).join('');
-    } else if (typeof rawSel === 'string' && rawSel.length > 2) {
-      const parts = rawSel.split(/[,\n]+/).map(s => s.trim()).filter(Boolean);
-      selHtml = parts.length > 1 ? parts.map(s => `<div style="padding:4px 0;border-bottom:0.5px solid var(--separator)">${escHtml(s)}</div>`).join('') : escHtml(rawSel);
+    if (selText && selText !== '\u2014') {
+      const parts = selText.split(/,\s*/).filter(Boolean);
+      selHtml = parts.length > 1 ? parts.map(s => `<div style="padding:4px 0;border-bottom:0.5px solid var(--separator)">${escHtml(s)}</div>`).join('') : escHtml(selText);
     }
     predBody.innerHTML = `<div class="prediction-header"><span class="prediction-type">${typeIcon} Pari ${escHtml(typeLabel)}</span><span class="badge ${cc}">${escHtml(data.plan.confiance||'?')}</span></div><dl class="prediction-details"><dt>Selections</dt><dd>${selHtml}</dd><dt>Cote totale</dt><dd style="font-weight:700;font-size:18px">${escHtml(String(data.plan.cote_totale||'\u2014'))}</dd><dt>Mise</dt><dd style="font-weight:600">${escHtml(String(data.mise_du_jour||'\u2014'))} \u20AC</dd></dl>`;
   } else predBody.innerHTML = '<p style="color:var(--text-tertiary)">Pas de pronostic pour cette date</p>';
@@ -1251,7 +1268,7 @@ async function loadPronos(date) {
     histEl.innerHTML = pf.paris.slice(-10).reverse().map(p => {
       const rc = (p.resultat||'').toUpperCase().includes('WIN') ? 'win' : (p.resultat||'').toUpperCase().includes('LOSS') ? 'loss' : 'pending';
       const rl = rc === 'win' ? 'WIN' : rc === 'loss' ? 'LOSS' : 'En attente';
-      const sel = Array.isArray(p.selections) ? p.selections.join(', ') : (p.selections||'\u2014');
+      const sel = formatSelections(p.selections);
       return `<div class="pari-item"><div class="pari-date">${escHtml(p.date||'')}</div><div class="pari-detail">${escHtml(sel)} <span style="color:var(--text-tertiary)">@${p.cote||'?'}</span></div><div class="pari-result ${rc}">${rl}</div></div>`;
     }).join('');
   } else histEl.innerHTML = '<p style="color:var(--text-tertiary);font-size:13px">Aucun pari</p>';
