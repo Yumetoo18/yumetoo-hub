@@ -1,0 +1,81 @@
+{
+  "aula_num": 3,
+  "date": "2026-03-20",
+  "theme": "Os números e as compras",
+  "message_perso": "Olá Yumetoo ! J'espère que tu vas bem ! Ça fait quelques jours, mais pas de souci - on va reprendre en douceur avec une leçon amusante sur les nombres et un petit voyage virtuel au marché portugais ! 😊",
+  "quiz": [
+    {
+      "question": "Comment dit-on \"Je m'appelle Marie\" en portugais ?",
+      "reponse": "Chamo-me Maria"
+    },
+    {
+      "question": "Que répond-on à \"Como está?\" ?",
+      "reponse": "Bem / Muito bem"
+    },
+    {
+      "question": "Si tu es une femme, comment dis-tu \"merci\" ?",
+      "reponse": "Obrigada"
+    }
+  ],
+  "vocabulaire": [
+    {
+      "portugais": "um",
+      "francais": "un",
+      "phonetique": "oum",
+      "exemple": "Um café, por favor",
+      "exemple_fr": "Un café, s'il vous plaît"
+    },
+    {
+      "portugais": "dois",
+      "francais": "deux",
+      "phonetique": "doyche",
+      "exemple": "Dois pastéis de nata",
+      "exemple_fr": "Deux pastels de nata"
+    },
+    {
+      "portugais": "três",
+      "francais": "trois",
+      "phonetique": "trèche",
+      "exemple": "Três euros",
+      "exemple_fr": "Trois euros"
+    },
+    {
+      "portugais": "por favor",
+      "francais": "s'il vous plaît",
+      "phonetique": "pour fa-vor",
+      "exemple": "Um café, por favor",
+      "exemple_fr": "Un café, s'il vous plaît"
+    },
+    {
+      "portugais": "quanto custa?",
+      "francais": "combien ça coûte ?",
+      "phonetique": "kouantou kouchta",
+      "exemple": "Quanto custa este pastel?",
+      "exemple_fr": "Combien coûte ce gâteau ?"
+    },
+    {
+      "portugais": "euro",
+      "francais": "euro",
+      "phonetique": "è-ou-rou",
+      "exemple": "Cinco euros",
+      "exemple_fr": "Cinq euros"
+    }
+  ],
+  "grammaire": {
+    "titre": "Les nombres de 1 à 10",
+    "explication": "En portugais européen, les nombres de base sont :\n- 1: um/uma (s'accorde avec le nom : um café, uma água)\n- 2: dois/duas (masculin/féminin : dois cafés, duas águas)\n- 3: três (invariable)\n- 4: quatro\n- 5: cinco\n- 6: seis (prononcé \"sayche\")\n- 7: sete (prononcé \"sète\")\n- 8: oito (prononcé \"oytou\")\n- 9: nove (prononcé \"nòvè\")\n- 10: dez (prononcé \"dèche\")\n\nAttention : contrairement au français, \"um\" et \"dois\" s'accordent en genre !"
+  },
+  "exercice": {
+    "titre": "Au marché portugais",
+    "type": "Dialogue à compléter",
+    "consigne": "Complète ce dialogue au marché avec les mots appris",
+    "contenu": "Vendeur: Olá! Bom dia!\nToi: Bom dia! _______ pastéis de nata, _______ _______.\nVendeur: Claro! Mais alguma coisa?\nToi: _______ _______ este café?\nVendeur: Um euro e cinquenta.\nToi: Fixe! _______.\n\nMots à utiliser : dois, por favor, quanto custa, obrigado/obrigada",
+    "correction": "Toi: Bom dia! Dois pastéis de nata, por favor.\nVendeur: Claro! Mais alguma coisa?\nToi: Quanto custa este café?\nVendeur: Um euro e cinquenta.\nToi: Fixe! Obrigada/Obrigado."
+  },
+  "culture": {
+    "titre": "Le Mercado da Ribeira à Lisbonne",
+    "contenu": "Le Mercado da Ribeira (marché de la Ribeira) à Lisbonne est devenu le \"Time Out Market\" en 2014. C'est un des endroits les plus animés de la capitale ! Tu y trouveras les meilleurs chefs portugais qui proposent leurs spécialités dans des stands. Les Lisboètes adorent y aller pour manger des bifanas (sandwichs au porc), boire une ginjinha, ou simplement retrouver des amigos.\n\nAu quotidien, les Portugais utilisent souvent l'expression \"Vamos às compras!\" (On va faire les courses!) mais entre amis, ils disent plutôt \"Vamos dar uma volta ao mercado!\" (On va faire un tour au marché!).",
+    "mot_culture": "bifana",
+    "mot_culture_trad": "sandwich traditionnel portugais au porc mariné dans une sauce à l'ail et au paprika"
+  }
+}

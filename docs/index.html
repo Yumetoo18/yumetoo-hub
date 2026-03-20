@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0f0f23">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="YumeHub">
+<meta name="description" content="YumeHub — Piano, Portugais, Pronos">
+<link rel="manifest" href="manifest.json">
+<title>YumeHub</title>
+
+<style>
+/* ============================================================
+   VARIABLES & RESET
+   ============================================================ */
+:root {
+  --bg: #0f0f23;
+  --card: #1a1a2e;
+  --card-hover: #222240;
+  --surface: #16213e;
+  --text: #e8e8f0;
+  --text-muted: #8888aa;
+  --border: #2a2a4a;
+  --piano: #6c5ce7;
+  --piano-dim: #6c5ce733;
+  --portugues: #00b894;
+  --portugues-dim: #00b89433;
+  --pronos: #e17055;
+  --pronos-dim: #e1705533;
+  --settings: #636e72;
+  --radius: 14px;
+  --radius-sm: 10px;
+  --nav-height: 64px;
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  padding: 12px 16px 8px;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+.app-header h1 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.app-header h1 span { opacity: 0.5; font-weight: 400; }
+
+/* ============================================================
+   MAIN CONTENT
+   ============================================================ */
+.tab-content {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 16px 16px calc(var(--nav-height) + var(--safe-bottom) + 16px);
+  -webkit-overflow-scrolling: touch;
+}
+.tab-panel { display: none; animation: fadeIn 0.25s ease; }
+.tab-panel.active { display: block; }
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================================
+   DATE NAVIGATION
+   ============================================================ */
+.date-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+.date-nav button {
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  transition: background 0.2s;
+}
+.date-nav button:hover { background: var(--card-hover); }
+.date-nav button:disabled { opacity: 0.3; cursor: default; }
+.date-nav .date-label {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  min-width: 130px;
+  text-align: center;
+}
+.date-nav .date-label strong { color: var(--text); display: block; font-size: 0.95rem; }
+
+/* ============================================================
+   CARDS
+   ============================================================ */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+}
+.card.accent-piano  { border-left: 3px solid var(--piano); }
+.card.accent-pt     { border-left: 3px solid var(--portugues); }
+.card.accent-pronos { border-left: 3px solid var(--pronos); }
+
+.card-title {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+.card-title.piano  { color: var(--piano); }
+.card-title.pt     { color: var(--portugues); }
+.card-title.pronos { color: var(--pronos); }
+
+/* ============================================================
+   SECTION HEADER (lecon / aula)
+   ============================================================ */
+.lesson-header {
+  text-align: center;
+  margin-bottom: 16px;
+}
+.lesson-header .num {
+  font-size: 2rem;
+  font-weight: 800;
+}
+.lesson-header .theme {
+  font-size: 1rem;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+/* ============================================================
+   MESSAGE PERSO
+   ============================================================ */
+.message-perso {
+  font-style: italic;
+  color: var(--text-muted);
+  line-height: 1.5;
+  font-size: 0.92rem;
+  padding: 12px 14px;
+  background: var(--surface);
+  border-radius: var(--radius-sm);
+  margin-bottom: 12px;
+}
+
+/* ============================================================
+   COLLAPSIBLE SECTIONS
+   ============================================================ */
+.collapsible {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.collapsible-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+}
+.collapsible-header:hover { background: var(--card-hover); }
+.collapsible-header h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.collapsible-header .chevron {
+  transition: transform 0.25s;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+.collapsible.open .chevron { transform: rotate(180deg); }
+.collapsible-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+.collapsible.open .collapsible-body { max-height: 2000px; }
+.collapsible-content {
+  padding: 0 16px 16px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+/* ============================================================
+   BADGES / PILLS
+   ============================================================ */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.badge-piano  { background: var(--piano-dim); color: var(--piano); }
+.badge-pt     { background: var(--portugues-dim); color: var(--portugues); }
+.badge-pronos { background: var(--pronos-dim); color: var(--pronos); }
+.badge-vert   { background: #00b89433; color: #00b894; }
+.badge-jaune  { background: #fdcb6e33; color: #fdcb6e; }
+.badge-rouge  { background: #e1705533; color: #e17055; }
+
+/* ============================================================
+   YOUTUBE LINK
+   ============================================================ */
+.youtube-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+.youtube-link:hover { text-decoration: underline; }
+
+/* ============================================================
+   VOCABULAIRE TABLE
+   ============================================================ */
+.vocab-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+.vocab-table th {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+  color: var(--portugues);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.vocab-table td {
+  padding: 8px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.vocab-table tr:last-child td { border-bottom: none; }
+.vocab-phonetique { color: var(--text-muted); font-style: italic; font-size: 0.8rem; }
+.vocab-exemple { color: var(--text-muted); font-size: 0.8rem; margin-top: 2px; }
+
+/* ============================================================
+   QUIZ
+   ============================================================ */
+.quiz-item {
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+.quiz-item:last-child { border-bottom: none; }
+.quiz-question { font-weight: 600; margin-bottom: 6px; }
+.quiz-answer {
+  color: var(--portugues);
+  cursor: pointer;
+  user-select: none;
+  font-size: 0.9rem;
+}
+.quiz-answer.hidden { color: transparent; background: var(--surface); border-radius: 4px; }
+.quiz-answer.hidden::after { content: 'Toucher pour voir'; color: var(--text-muted); font-size: 0.8rem; }
+
+/* ============================================================
+   REVEAL BUTTON
+   ============================================================ */
+.reveal-btn {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text-muted);
+  padding: 10px 16px;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  font-size: 0.85rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+.reveal-btn:hover { background: var(--card-hover); }
+
+/* ============================================================
+   PRONOS — Solde / Stats
+   ============================================================ */
+.solde-card {
+  text-align: center;
+  padding: 24px 16px;
+}
+.solde-amount {
+  font-size: 2.4rem;
+  font-weight: 800;
+}
+.solde-amount.positive { color: #00b894; }
+.solde-amount.negative { color: #e17055; }
+.solde-amount.neutral  { color: var(--text); }
+.solde-label { color: var(--text-muted); font-size: 0.8rem; margin-top: 4px; }
+.stats-row {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+.stat-item { text-align: center; }
+.stat-value { font-size: 1.2rem; font-weight: 700; }
+.stat-label { font-size: 0.7rem; color: var(--text-muted); text-transform: uppercase; margin-top: 2px; }
+
+/* ============================================================
+   PRONOS — Prediction card
+   ============================================================ */
+.prediction-card { position: relative; }
+.prediction-header {
+  display: flex; justify-content: space-between; align-items: center;
+  margin-bottom: 12px;
+}
+.prediction-type { font-weight: 700; font-size: 1rem; }
+.prediction-details { font-size: 0.9rem; line-height: 1.6; }
+.prediction-details dt { color: var(--text-muted); font-size: 0.8rem; text-transform: uppercase; }
+.prediction-details dd { margin-bottom: 10px; }
+
+/* ============================================================
+   PARIS HISTORY
+   ============================================================ */
+.pari-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.85rem;
+}
+.pari-item:last-child { border-bottom: none; }
+.pari-date { color: var(--text-muted); min-width: 75px; }
+.pari-detail { flex: 1; margin: 0 10px; }
+.pari-result { font-weight: 700; }
+.pari-result.win  { color: #00b894; }
+.pari-result.loss { color: #e17055; }
+.pari-result.pending { color: #fdcb6e; }
+
+/* ============================================================
+   FEEDBACK
+   ============================================================ */
+.feedback-section { margin-top: 24px; }
+.feedback-section h3 {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+.feedback-textarea {
+  width: 100%;
+  min-height: 80px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  padding: 12px;
+  font-size: 0.9rem;
+  font-family: inherit;
+  resize: vertical;
+}
+.feedback-textarea::placeholder { color: var(--text-muted); }
+.feedback-textarea:focus { outline: none; border-color: var(--text-muted); }
+.feedback-btn {
+  margin-top: 8px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  color: #fff;
+}
+.feedback-btn:hover { opacity: 0.85; }
+.feedback-btn.piano  { background: var(--piano); }
+.feedback-btn.pt     { background: var(--portugues); }
+.feedback-btn.pronos { background: var(--pronos); }
+.feedback-saved {
+  font-size: 0.8rem;
+  color: #00b894;
+  margin-top: 6px;
+  display: none;
+}
+
+/* ============================================================
+   SETTINGS
+   ============================================================ */
+.settings-group {
+  margin-bottom: 20px;
+}
+.settings-group h3 {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+.settings-input {
+  width: 100%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text);
+  padding: 12px;
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+.settings-input:focus { outline: none; border-color: var(--text-muted); }
+.settings-note {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 6px;
+  line-height: 1.4;
+}
+.settings-version {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+}
+
+/* ============================================================
+   LOADING / EMPTY STATE
+   ============================================================ */
+.loading {
+  text-align: center;
+  padding: 48px 16px;
+  color: var(--text-muted);
+}
+.loading .spinner {
+  width: 32px; height: 32px;
+  border: 3px solid var(--border);
+  border-top-color: var(--text-muted);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto 12px;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.empty-state {
+  text-align: center;
+  padding: 48px 16px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+.empty-state .emoji { font-size: 2rem; margin-bottom: 8px; }
+
+/* ============================================================
+   BOTTOM NAV
+   ============================================================ */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0; right: 0;
+  height: calc(var(--nav-height) + var(--safe-bottom));
+  padding-bottom: var(--safe-bottom);
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  display: flex;
+  z-index: 200;
+}
+.nav-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.65rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: color 0.2s;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+.nav-item .icon { font-size: 1.4rem; }
+.nav-item.active[data-tab="piano"]    { color: var(--piano); }
+.nav-item.active[data-tab="portugues"]{ color: var(--portugues); }
+.nav-item.active[data-tab="pronos"]   { color: var(--pronos); }
+.nav-item.active[data-tab="settings"] { color: var(--text); }
+
+/* ============================================================
+   SCROLLBAR
+   ============================================================ */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* ============================================================
+   DESKTOP
+   ============================================================ */
+@media (min-width: 600px) {
+  .tab-content { max-width: 480px; margin: 0 auto; }
+}
+</style>
+</head>
+
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header class="app-header">
+  <h1>YumeHub <span>v1.0</span></h1>
+</header>
+
+<!-- ============================================================
+     CONTENU DES ONGLETS
+     ============================================================ -->
+<main class="tab-content">
+
+  <!-- ===================== PIANO ===================== -->
+  <section id="panel-piano" class="tab-panel active">
+    <div id="piano-loading" class="loading"><div class="spinner"></div>Chargement...</div>
+    <div id="piano-empty" class="empty-state" style="display:none"><div class="emoji">🎹</div>Aucune leçon disponible</div>
+    <div id="piano-content" style="display:none">
+
+      <!-- Date nav -->
+      <div class="date-nav">
+        <button id="piano-prev" aria-label="Jour précédent">&#8249;</button>
+        <div class="date-label" id="piano-date-label"></div>
+        <button id="piano-next" aria-label="Jour suivant">&#8250;</button>
+      </div>
+
+      <!-- Header leçon -->
+      <div class="lesson-header">
+        <div class="num" style="color:var(--piano)" id="piano-num"></div>
+        <div class="theme" id="piano-theme"></div>
+      </div>
+
+      <!-- Message perso -->
+      <div class="message-perso" id="piano-message"></div>
+
+      <!-- Échauffement -->
+      <div class="collapsible open" id="piano-echauffement">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <h3>🔥 <span id="piano-echauf-titre">Échauffement</span></h3>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <span class="badge badge-piano" id="piano-echauf-duree"></span>
+          <p id="piano-echauf-desc" style="margin-top:10px"></p>
+        </div></div>
+      </div>
+
+      <!-- Morceau du jour -->
+      <div class="collapsible open" id="piano-morceau">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <h3>🎵 <span id="piano-morceau-titre">Morceau du jour</span></h3>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px">
+            <span class="badge badge-piano" id="piano-morceau-duree"></span>
+            <span class="badge badge-piano" id="piano-morceau-diff"></span>
+          </div>
+          <p id="piano-morceau-instructions"></p>
+          <a id="piano-morceau-yt" class="youtube-link" href="#" target="_blank" rel="noopener" style="display:none">
+            ▶ Voir sur YouTube
+          </a>
+        </div></div>
+      </div>
+
+      <!-- Tip du jour -->
+      <div class="collapsible" id="piano-tip">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <h3>💡 <span id="piano-tip-titre">Tip du jour</span></h3>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="collapsible-body"><div class="collapsible-content">
+          <p id="piano-tip-contenu"></p>
+        </div></div>
+      </div>
+
+      <!-- Feedback -->
+      <div class="feedback-section">
+        <h3>💬 Feedback</h3>
+        <textarea class="feedback-textarea" id="piano-feedback" placeholder="Comment s'est passée la leçon ?"></textarea>
+        <button class="feedback-btn piano" onclick="saveFeedback('piano')">Envoyer</button>
+        <div class="feedback-saved" id="piano-feedback-saved">✓ Sauvegardé !</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PORTUGAIS ===================== -->
+  <section id="panel-portugues" class="tab-panel">
+    <div id="pt-loading" class="loading"><div class="spinner"></div>Chargement...</div>
+    <div id="pt-empty" class="empty-state" style="display:none"><div class="emoji">🇵🇹</div>Aucune aula disponible</div>
+    <div id="pt-content" style="display:none">
+
+      <!-- Date nav -->
+      <div class="date-nav">
+        <button id="pt-prev" aria-label="Jour précédent">&#8249;</button>
+        <div class="date-label" id="pt-date-label"></div>
+        <button id="pt-next" aria-label="Jour suivant">&#8250;</button>
+      </div>
+
+      <!-- Header aula -->
+      <div class="lesson-header">
+        <div class="num" style="color:var(--portugues)" id="pt-num"></div>
+        <div class="theme" id="pt-theme"></div>
+      </div>
+
+      <!-- Message perso -->
+      <div class="message-perso" id="pt-message"></div>
+
+      <!-- Quiz -->
+      <div class="collapsible open" id="pt-quiz-section">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <h3>❓ Quiz de révision</h3>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="collapsible-body"><div class="collapsible-content" id="pt-quiz"></div></div>
+      </div>
+
+      <!-- Vocabulaire -->
+      <div class="collapsible open" id="pt-vocab-section">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <h3>📖 Vocabulaire</h3>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="collapsible-body"><div class="collapsible-content" id="pt-vocab"></div></div>
+      </div>
+
+      <!-- Grammaire -->
+      <div class="collapsible" id="pt-gram-section">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <h3>📝 <span id="pt-gram-titre">Grammaire</span></h3>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="collapsible-body"><div class="collapsible-content" id="pt-gram"></div></div>
+      </div>
+
+      <!-- Exercice -->
+      <div class="collapsible" id="pt-exercice-section">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <h3>✏️ <span id="pt-exercice-titre">Exercice</span></h3>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="collapsible-body"><div class="collapsible-content" id="pt-exercice"></div></div>
+      </div>
+
+      <!-- Culture -->
+      <div class="collapsible" id="pt-culture-section">
+        <div class="collapsible-header" onclick="toggleCollapsible(this)">
+          <h3>🌍 <span id="pt-culture-titre">Culture</span></h3>
+          <span class="chevron">▼</span>
+        </div>
+        <div class="collapsible-body"><div class="collapsible-content" id="pt-culture"></div></div>
+      </div>
+
+      <!-- Feedback -->
+      <div class="feedback-section">
+        <h3>💬 Feedback</h3>
+        <textarea class="feedback-textarea" id="pt-feedback" placeholder="Comment s'est passée l'aula ?"></textarea>
+        <button class="feedback-btn pt" onclick="saveFeedback('portugues')">Envoyer</button>
+        <div class="feedback-saved" id="pt-feedback-saved">✓ Sauvegardé !</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PRONOS ===================== -->
+  <section id="panel-pronos" class="tab-panel">
+    <div id="pronos-loading" class="loading"><div class="spinner"></div>Chargement...</div>
+    <div id="pronos-empty" class="empty-state" style="display:none"><div class="emoji">⚽</div>Aucun pronostic disponible</div>
+    <div id="pronos-content" style="display:none">
+
+      <!-- Solde card (toujours affiché, vient du portefeuille) -->
+      <div class="card accent-pronos solde-card" id="pronos-solde-card">
+        <div class="solde-amount" id="pronos-solde">—</div>
+        <div class="solde-label">Solde actuel</div>
+        <div class="stats-row" id="pronos-stats-row"></div>
+      </div>
+
+      <!-- Date nav -->
+      <div class="date-nav">
+        <button id="pronos-prev" aria-label="Jour précédent">&#8249;</button>
+        <div class="date-label" id="pronos-date-label"></div>
+        <button id="pronos-next" aria-label="Jour suivant">&#8250;</button>
+      </div>
+
+      <!-- Pronostic du jour -->
+      <div class="card accent-pronos prediction-card" id="pronos-prediction">
+        <div class="card-title pronos">Pronostic du jour</div>
+        <div id="pronos-prediction-body"></div>
+      </div>
+
+      <!-- Résultats veille -->
+      <div class="card" id="pronos-resultats" style="display:none">
+        <div class="card-title pronos">Résultats de la veille</div>
+        <p id="pronos-resultats-body" style="font-size:0.9rem;line-height:1.5;color:var(--text-muted)"></p>
+      </div>
+
+      <!-- Historique des paris -->
+      <div class="card" id="pronos-history-card">
+        <div class="card-title pronos">Historique des paris</div>
+        <div id="pronos-history"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SETTINGS ===================== -->
+  <section id="panel-settings" class="tab-panel">
+    <div class="lesson-header">
+      <div class="num" style="color:var(--text)">⚙️</div>
+      <div class="theme">Réglages</div>
+    </div>
+
+    <div class="card">
+      <div class="settings-group">
+        <h3>🔔 Notifications (ntfy.sh)</h3>
+        <p class="settings-note">
+          Abonnez-vous aux topics suivants dans l'app <strong>ntfy</strong> pour recevoir les notifications push :
+        </p>
+        <div style="margin-top:10px;display:flex;flex-direction:column;gap:6px">
+          <code style="background:var(--surface);padding:8px 12px;border-radius:6px;font-size:0.85rem;color:var(--piano)">yumehub-piano</code>
+          <code style="background:var(--surface);padding:8px 12px;border-radius:6px;font-size:0.85rem;color:var(--portugues)">yumehub-portugues</code>
+          <code style="background:var(--surface);padding:8px 12px;border-radius:6px;font-size:0.85rem;color:var(--pronos)">yumehub-pronos</code>
+        </div>
+        <p class="settings-note" style="margin-top:8px">
+          Téléchargez ntfy depuis l'App Store / Play Store, puis abonnez-vous à ces topics.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="settings-group">
+        <h3>🔑 Token GitHub (feedback)</h3>
+        <input type="password" class="settings-input" id="settings-gh-token"
+               placeholder="ghp_xxxxxxxxxxxx"
+               oninput="saveGhToken(this.value)">
+        <p class="settings-note">
+          Token GitHub pour envoyer le feedback directement en issue. Sauvegardé localement.
+        </p>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="settings-group">
+        <h3>🗄️ Cache</h3>
+        <button class="feedback-btn" style="background:var(--settings);width:100%" onclick="clearAppCache()">
+          Vider le cache local
+        </button>
+        <p class="settings-note" style="margin-top:6px">
+          Supprime les données mises en cache et recharge l'app.
+        </p>
+      </div>
+    </div>
+
+    <div class="settings-version">
+      YumeHub v1.0.0 — Made with 🌙 by Yume<br>
+      <span style="font-size:0.7rem">PWA • Vanilla JS • Dark Mode</span>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================================================
+     BOTTOM NAV
+     ============================================================ -->
+<nav class="bottom-nav">
+  <div class="nav-item active" data-tab="piano" onclick="switchTab('piano')">
+    <span class="icon">🎹</span>
+    Piano
+  </div>
+  <div class="nav-item" data-tab="portugues" onclick="switchTab('portugues')">
+    <span class="icon">🇵🇹</span>
+    Português
+  </div>
+  <div class="nav-item" data-tab="pronos" onclick="switchTab('pronos')">
+    <span class="icon">⚽</span>
+    Pronos
+  </div>
+  <div class="nav-item" data-tab="settings" onclick="switchTab('settings')">
+    <span class="icon">⚙️</span>
+    Réglages
+  </div>
+</nav>
+
+<!-- ============================================================
+     JAVASCRIPT
+     ============================================================ -->
+<script>
+// ============================================================
+// Configuration
+// ============================================================
+const BASE_URL = ''; // Vide = chemins relatifs (ex: data/piano/lecon-latest.json)
+
+// ============================================================
+// État global
+// ============================================================
+const state = {
+  currentTab: 'piano',
+  piano:     { date: null, loaded: false },
+  portugues: { date: null, loaded: false },
+  pronos:    { date: null, loaded: false, portefeuille: null }
+};
+
+// Date du jour au format YYYY-MM-DD
+function todayStr() {
+  return new Date().toISOString().split('T')[0];
+}
+
+// Formater une date pour l'affichage
+function formatDate(dateStr) {
+  if (!dateStr) return '';
+  const d = new Date(dateStr + 'T12:00:00');
+  const opts = { weekday: 'short', day: 'numeric', month: 'short' };
+  return d.toLocaleDateString('fr-FR', opts);
+}
+
+// Navigation par date : ajouter/retirer des jours
+function addDays(dateStr, n) {
+  const d = new Date(dateStr + 'T12:00:00');
+  d.setDate(d.getDate() + n);
+  return d.toISOString().split('T')[0];
+}
+
+// ============================================================
+// Fetch avec cache localStorage
+// ============================================================
+async function fetchJSON(path) {
+  const url = BASE_URL ? `${BASE_URL}/${path}` : path;
+  const cacheKey = `yh_cache_${path}`;
+
+  try {
+    const resp = await fetch(url);
+    if (!resp.ok) throw new Error(`HTTP ${resp.status}`);
+    const data = await resp.json();
+    // Sauvegarder en cache local
+    try { localStorage.setItem(cacheKey, JSON.stringify(data)); } catch(e) {}
+    return data;
+  } catch (err) {
+    // Tenter le cache local
+    const cached = localStorage.getItem(cacheKey);
+    if (cached) return JSON.parse(cached);
+    return null;
+  }
+}
+
+// ============================================================
+// Navigation entre onglets
+// ============================================================
+function switchTab(tab) {
+  state.currentTab = tab;
+  // Panels
+  document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+  document.getElementById(`panel-${tab}`).classList.add('active');
+  // Nav items
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  document.querySelector(`.nav-item[data-tab="${tab}"]`).classList.add('active');
+  // Charger les données si pas encore fait
+  if (tab === 'piano' && !state.piano.loaded) loadPiano();
+  if (tab === 'portugues' && !state.portugues.loaded) loadPortugues();
+  if (tab === 'pronos' && !state.pronos.loaded) loadPronos();
+  // Charger le token GH dans settings
+  if (tab === 'settings') {
+    const tok = localStorage.getItem('yh_gh_token') || '';
+    document.getElementById('settings-gh-token').value = tok;
+  }
+}
+
+// ============================================================
+// Collapsible sections
+// ============================================================
+function toggleCollapsible(header) {
+  header.parentElement.classList.toggle('open');
+}
+
+// ============================================================
+// PIANO
+// ============================================================
+async function loadPiano(date) {
+  const loading = document.getElementById('piano-loading');
+  const empty   = document.getElementById('piano-empty');
+  const content = document.getElementById('piano-content');
+
+  loading.style.display = 'block';
+  empty.style.display = 'none';
+  content.style.display = 'none';
+
+  // Déterminer le chemin
+  const targetDate = date || null;
+  const path = targetDate
+    ? `data/piano/lecon-${targetDate}.json`
+    : 'data/piano/lecon-latest.json';
+
+  const data = await fetchJSON(path);
+  loading.style.display = 'none';
+
+  if (!data) {
+    empty.style.display = 'block';
+    // Garder la navigation de date fonctionnelle
+    if (targetDate) {
+      content.style.display = 'block';
+      empty.style.display = 'block';
+      updatePianoDateNav(targetDate);
+    }
+    return;
+  }
+
+  state.piano.loaded = true;
+  state.piano.date = data.date || targetDate || todayStr();
+  content.style.display = 'block';
+
+  // Remplir le contenu
+  updatePianoDateNav(state.piano.date);
+  document.getElementById('piano-num').textContent = `Leçon ${data.lecon_num || '?'}`;
+  document.getElementById('piano-theme').textContent = data.theme || '';
+  document.getElementById('piano-message').textContent = data.message_perso || '';
+
+  // Échauffement
+  if (data.echauffement) {
+    document.getElementById('piano-echauf-titre').textContent = data.echauffement.titre || 'Échauffement';
+    document.getElementById('piano-echauf-duree').textContent = data.echauffement.duree || '';
+    document.getElementById('piano-echauf-desc').textContent = data.echauffement.description || '';
+  }
+
+  // Morceau
+  if (data.morceau) {
+    document.getElementById('piano-morceau-titre').textContent = data.morceau.titre || 'Morceau du jour';
+    document.getElementById('piano-morceau-duree').textContent = data.morceau.duree || '';
+    document.getElementById('piano-morceau-diff').textContent = data.morceau.difficulte || '';
+    document.getElementById('piano-morceau-instructions').textContent = data.morceau.instructions || '';
+    const ytLink = document.getElementById('piano-morceau-yt');
+    if (data.morceau.youtube) {
+      ytLink.href = data.morceau.youtube;
+      ytLink.style.display = 'inline-flex';
+    } else {
+      ytLink.style.display = 'none';
+    }
+  }
+
+  // Tip
+  if (data.tip) {
+    document.getElementById('piano-tip-titre').textContent = data.tip.titre || 'Tip du jour';
+    document.getElementById('piano-tip-contenu').textContent = data.tip.contenu || '';
+  }
+
+  // Feedback existant
+  const fb = localStorage.getItem(`yh_feedback_piano_${state.piano.date}`);
+  document.getElementById('piano-feedback').value = fb || '';
+}
+
+function updatePianoDateNav(date) {
+  const label = document.getElementById('piano-date-label');
+  const today = todayStr();
+  const isToday = date === today;
+  label.innerHTML = `<strong>${isToday ? "Aujourd'hui" : formatDate(date)}</strong>${date}`;
+  document.getElementById('piano-next').disabled = isToday;
+}
+
+document.getElementById('piano-prev').addEventListener('click', () => {
+  const newDate = addDays(state.piano.date || todayStr(), -1);
+  state.piano.loaded = false;
+  loadPiano(newDate);
+});
+document.getElementById('piano-next').addEventListener('click', () => {
+  const newDate = addDays(state.piano.date || todayStr(), 1);
+  if (newDate <= todayStr()) {
+    state.piano.loaded = false;
+    loadPiano(newDate);
+  }
+});
+
+// ============================================================
+// PORTUGAIS
+// ============================================================
+async function loadPortugues(date) {
+  const loading = document.getElementById('pt-loading');
+  const empty   = document.getElementById('pt-empty');
+  const content = document.getElementById('pt-content');
+
+  loading.style.display = 'block';
+  empty.style.display = 'none';
+  content.style.display = 'none';
+
+  const targetDate = date || null;
+  const path = targetDate
+    ? `data/portugues/aula-${targetDate}.json`
+    : 'data/portugues/aula-latest.json';
+
+  const data = await fetchJSON(path);
+  loading.style.display = 'none';
+
+  if (!data) {
+    if (targetDate) {
+      content.style.display = 'block';
+      empty.style.display = 'block';
+      updatePtDateNav(targetDate);
+    } else {
+      empty.style.display = 'block';
+    }
+    return;
+  }
+
+  state.portugues.loaded = true;
+  state.portugues.date = data.date || targetDate || todayStr();
+  content.style.display = 'block';
+
+  updatePtDateNav(state.portugues.date);
+  document.getElementById('pt-num').textContent = `Aula ${data.aula_num || '?'}`;
+  document.getElementById('pt-theme').textContent = data.theme || '';
+  document.getElementById('pt-message').textContent = data.message_perso || '';
+
+  // Quiz
+  const quizEl = document.getElementById('pt-quiz');
+  if (data.quiz && data.quiz.length) {
+    quizEl.innerHTML = data.quiz.map((q, i) => `
+      <div class="quiz-item">
+        <div class="quiz-question">${i + 1}. ${escHtml(q.question)}</div>
+        <div class="quiz-answer hidden" onclick="this.classList.toggle('hidden')">
+          ${escHtml(q.reponse)}
+        </div>
+      </div>
+    `).join('');
+  } else {
+    quizEl.innerHTML = '<p style="color:var(--text-muted)">Pas de quiz aujourd\'hui</p>';
+  }
+
+  // Vocabulaire
+  const vocabEl = document.getElementById('pt-vocab');
+  if (data.vocabulaire && data.vocabulaire.length) {
+    vocabEl.innerHTML = `
+      <table class="vocab-table">
+        <thead><tr><th>Português</th><th>Français</th></tr></thead>
+        <tbody>
+          ${data.vocabulaire.map(v => `
+            <tr>
+              <td>
+                <strong>${escHtml(v.portugais)}</strong>
+                ${v.phonetique ? `<div class="vocab-phonetique">[${escHtml(v.phonetique)}]</div>` : ''}
+                ${v.exemple ? `<div class="vocab-exemple">${escHtml(v.exemple)}</div>` : ''}
+              </td>
+              <td>
+                ${escHtml(v.francais)}
+                ${v.exemple_fr ? `<div class="vocab-exemple">${escHtml(v.exemple_fr)}</div>` : ''}
+              </td>
+            </tr>
+          `).join('')}
+        </tbody>
+      </table>
+    `;
+  } else {
+    vocabEl.innerHTML = '<p style="color:var(--text-muted)">Pas de vocabulaire</p>';
+  }
+
+  // Grammaire
+  if (data.grammaire) {
+    document.getElementById('pt-gram-titre').textContent = data.grammaire.titre || 'Grammaire';
+    document.getElementById('pt-gram').innerHTML = `<p>${escHtml(data.grammaire.explication || '')}</p>`;
+  }
+
+  // Exercice
+  if (data.exercice) {
+    document.getElementById('pt-exercice-titre').textContent = data.exercice.titre || 'Exercice';
+    const exEl = document.getElementById('pt-exercice');
+    let html = '';
+    if (data.exercice.consigne) html += `<p style="margin-bottom:8px"><strong>${escHtml(data.exercice.consigne)}</strong></p>`;
+    if (data.exercice.contenu) html += `<p>${escHtml(data.exercice.contenu)}</p>`;
+    if (data.exercice.correction) {
+      html += `
+        <div id="pt-correction" style="display:none;margin-top:10px;padding:10px;background:var(--surface);border-radius:8px;color:var(--portugues)">
+          ${escHtml(data.exercice.correction)}
+        </div>
+        <button class="reveal-btn" onclick="toggleCorrection()">Voir la correction</button>
+      `;
+    }
+    exEl.innerHTML = html;
+  }
+
+  // Culture
+  if (data.culture) {
+    document.getElementById('pt-culture-titre').textContent = data.culture.titre || 'Culture';
+    let cHtml = `<p>${escHtml(data.culture.contenu || '')}</p>`;
+    if (data.culture.mot_culture) {
+      cHtml += `<p style="margin-top:10px;font-weight:600;color:var(--portugues)">${escHtml(data.culture.mot_culture)}</p>`;
+      if (data.culture.mot_culture_trad) {
+        cHtml += `<p style="color:var(--text-muted);font-size:0.85rem">${escHtml(data.culture.mot_culture_trad)}</p>`;
+      }
+    }
+    document.getElementById('pt-culture').innerHTML = cHtml;
+  }
+
+  // Feedback existant
+  const fb = localStorage.getItem(`yh_feedback_portugues_${state.portugues.date}`);
+  document.getElementById('pt-feedback').value = fb || '';
+}
+
+function updatePtDateNav(date) {
+  const label = document.getElementById('pt-date-label');
+  const today = todayStr();
+  const isToday = date === today;
+  label.innerHTML = `<strong>${isToday ? "Aujourd'hui" : formatDate(date)}</strong>${date}`;
+  document.getElementById('pt-next').disabled = isToday;
+}
+
+document.getElementById('pt-prev').addEventListener('click', () => {
+  const newDate = addDays(state.portugues.date || todayStr(), -1);
+  state.portugues.loaded = false;
+  loadPortugues(newDate);
+});
+document.getElementById('pt-next').addEventListener('click', () => {
+  const newDate = addDays(state.portugues.date || todayStr(), 1);
+  if (newDate <= todayStr()) {
+    state.portugues.loaded = false;
+    loadPortugues(newDate);
+  }
+});
+
+function toggleCorrection() {
+  const el = document.getElementById('pt-correction');
+  if (el) {
+    const visible = el.style.display !== 'none';
+    el.style.display = visible ? 'none' : 'block';
+    el.nextElementSibling.textContent = visible ? 'Voir la correction' : 'Masquer la correction';
+  }
+}
+
+// ============================================================
+// PRONOS
+// ============================================================
+async function loadPronos(date) {
+  const loading = document.getElementById('pronos-loading');
+  const empty   = document.getElementById('pronos-empty');
+  const content = document.getElementById('pronos-content');
+
+  loading.style.display = 'block';
+  empty.style.display = 'none';
+  content.style.display = 'none';
+
+  // Charger le portefeuille (une seule fois)
+  if (!state.pronos.portefeuille) {
+    state.pronos.portefeuille = await fetchJSON('data/pronos/portefeuille.json');
+  }
+
+  // Charger le pronostic
+  const targetDate = date || null;
+  const path = targetDate
+    ? `data/pronos/pronostic-${targetDate}.json`
+    : 'data/pronos/pronostic-latest.json';
+
+  const data = await fetchJSON(path);
+  loading.style.display = 'none';
+
+  if (!data && !state.pronos.portefeuille) {
+    empty.style.display = 'block';
+    return;
+  }
+
+  state.pronos.loaded = true;
+  state.pronos.date = (data && data.date) || targetDate || todayStr();
+  content.style.display = 'block';
+
+  // Solde card (depuis portefeuille ou pronostic)
+  const pf = state.pronos.portefeuille;
+  const solde = (pf && pf.solde != null) ? pf.solde : (data ? data.solde : 0);
+  const capitalInitial = (pf && pf.capital_initial) || 10;
+  const roi = capitalInitial > 0 ? (((solde - capitalInitial) / capitalInitial) * 100).toFixed(1) : '0.0';
+  const soldeEl = document.getElementById('pronos-solde');
+  soldeEl.textContent = `${solde.toFixed(2)} €`;
+  soldeEl.className = 'solde-amount ' + (solde > capitalInitial ? 'positive' : solde < capitalInitial ? 'negative' : 'neutral');
+
+  // Stats
+  const stats = (data && data.stats) || (pf && pf.stats) || {};
+  const statsRow = document.getElementById('pronos-stats-row');
+  const totalParis = stats.total_paris || 0;
+  const gagnes = stats.paris_gagnes || 0;
+  const winRate = totalParis > 0 ? ((gagnes / totalParis) * 100).toFixed(0) : '—';
+  statsRow.innerHTML = `
+    <div class="stat-item"><div class="stat-value" style="color:${parseFloat(roi) >= 0 ? '#00b894' : '#e17055'}">${roi}%</div><div class="stat-label">ROI</div></div>
+    <div class="stat-item"><div class="stat-value">${winRate}${winRate !== '—' ? '%' : ''}</div><div class="stat-label">Win Rate</div></div>
+    <div class="stat-item"><div class="stat-value">${totalParis}</div><div class="stat-label">Paris</div></div>
+  `;
+
+  // Date nav
+  updatePronosDateNav(state.pronos.date);
+
+  // Pronostic du jour
+  const predBody = document.getElementById('pronos-prediction-body');
+  if (data && data.plan) {
+    const confClass = (data.plan.confiance || '').toLowerCase().includes('vert') ? 'badge-vert'
+                    : (data.plan.confiance || '').toLowerCase().includes('rouge') ? 'badge-rouge'
+                    : 'badge-jaune';
+    predBody.innerHTML = `
+      <div class="prediction-header">
+        <span class="prediction-type">${escHtml(data.plan.type || 'Simple')}</span>
+        <span class="badge ${confClass}">${escHtml(data.plan.confiance || '?')}</span>
+      </div>
+      <dl class="prediction-details">
+        <dt>Sélections</dt>
+        <dd>${escHtml(data.plan.selections || '—')}</dd>
+        <dt>Cote totale</dt>
+        <dd>${escHtml(String(data.plan.cote_totale || '—'))}</dd>
+        <dt>Mise</dt>
+        <dd>${escHtml(String(data.mise_du_jour || '—'))} €</dd>
+      </dl>
+    `;
+  } else {
+    predBody.innerHTML = '<p style="color:var(--text-muted)">Pas de pronostic pour cette date</p>';
+  }
+
+  // Résultats veille
+  const resEl = document.getElementById('pronos-resultats');
+  const resBody = document.getElementById('pronos-resultats-body');
+  if (data && data.resultats_veille) {
+    resEl.style.display = 'block';
+    resBody.textContent = data.resultats_veille;
+  } else {
+    resEl.style.display = 'none';
+  }
+
+  // Historique des paris (depuis portefeuille)
+  const histEl = document.getElementById('pronos-history');
+  if (pf && pf.paris && pf.paris.length) {
+    const last10 = pf.paris.slice(-10).reverse();
+    histEl.innerHTML = last10.map(p => {
+      const resClass = (p.resultat || '').toUpperCase().includes('WIN') ? 'win'
+                     : (p.resultat || '').toUpperCase().includes('LOSS') ? 'loss'
+                     : 'pending';
+      const resLabel = (p.resultat || '').toUpperCase().includes('WIN') ? '✓ WIN'
+                     : (p.resultat || '').toUpperCase().includes('LOSS') ? '✗ LOSS'
+                     : '⏳ En attente';
+      const selections = Array.isArray(p.selections) ? p.selections.join(', ') : (p.selections || '—');
+      return `
+        <div class="pari-item">
+          <div class="pari-date">${escHtml(p.date || '—')}</div>
+          <div class="pari-detail">${escHtml(selections)} <span style="color:var(--text-muted)">@${p.cote || '?'}</span></div>
+          <div class="pari-result ${resClass}">${resLabel}</div>
+        </div>
+      `;
+    }).join('');
+  } else {
+    histEl.innerHTML = '<p style="color:var(--text-muted);font-size:0.85rem">Aucun pari enregistré</p>';
+  }
+}
+
+function updatePronosDateNav(date) {
+  const label = document.getElementById('pronos-date-label');
+  const today = todayStr();
+  const isToday = date === today;
+  label.innerHTML = `<strong>${isToday ? "Aujourd'hui" : formatDate(date)}</strong>${date}`;
+  document.getElementById('pronos-next').disabled = isToday;
+}
+
+document.getElementById('pronos-prev').addEventListener('click', () => {
+  const newDate = addDays(state.pronos.date || todayStr(), -1);
+  state.pronos.loaded = false;
+  loadPronos(newDate);
+});
+document.getElementById('pronos-next').addEventListener('click', () => {
+  const newDate = addDays(state.pronos.date || todayStr(), 1);
+  if (newDate <= todayStr()) {
+    state.pronos.loaded = false;
+    loadPronos(newDate);
+  }
+});
+
+// ============================================================
+// FEEDBACK
+// ============================================================
+function saveFeedback(agent) {
+  const dateKey = agent === 'piano' ? state.piano.date
+                : agent === 'portugues' ? state.portugues.date
+                : state.pronos.date;
+  const prefix = agent === 'portugues' ? 'pt' : agent;
+  const textarea = document.getElementById(`${prefix}-feedback`);
+  const saved = document.getElementById(`${prefix}-feedback-saved`);
+
+  if (!textarea.value.trim()) return;
+
+  localStorage.setItem(`yh_feedback_${agent}_${dateKey}`, textarea.value);
+
+  // Afficher confirmation
+  saved.style.display = 'block';
+  setTimeout(() => { saved.style.display = 'none'; }, 2500);
+}
+
+// ============================================================
+// SETTINGS
+// ============================================================
+function saveGhToken(val) {
+  localStorage.setItem('yh_gh_token', val);
+}
+
+function clearAppCache() {
+  // Supprimer toutes les entrées yh_cache_
+  const keys = [];
+  for (let i = 0; i < localStorage.length; i++) {
+    const key = localStorage.key(i);
+    if (key && key.startsWith('yh_cache_')) keys.push(key);
+  }
+  keys.forEach(k => localStorage.removeItem(k));
+
+  // Supprimer le cache du service worker
+  if ('caches' in window) {
+    caches.keys().then(names => names.forEach(n => caches.delete(n)));
+  }
+
+  // Recharger
+  window.location.reload();
+}
+
+// ============================================================
+// UTILS
+// ============================================================
+function escHtml(str) {
+  if (!str) return '';
+  const div = document.createElement('div');
+  div.textContent = str;
+  return div.innerHTML;
+}
+
+// ============================================================
+// SERVICE WORKER
+// ============================================================
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').catch(() => {});
+}
+
+// ============================================================
+// INIT
+// ============================================================
+loadPiano();
+
+</script>
+</body>
+</html>
