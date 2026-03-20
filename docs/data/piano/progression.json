@@ -1,20 +1,22 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 0,
+  "lecon_actuelle": 1,
   "programme": {
     "phase": "bases",
     "phase_label": "Les Bases",
     "mois": 1,
     "semaine": 1
   },
-  "morceaux_en_cours": [],
+  "morceaux_en_cours": [
+    "Gamme de Do - Main droite"
+  ],
   "morceaux_maitrises": [],
   "points_forts": [],
   "points_faibles": [],
-  "exercices_completes": 0,
-  "jours_sans_feedback": 0,
+  "exercices_completes": 1,
+  "jours_sans_feedback": 1,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": null,
+  "derniere_lecon_envoyee": "2024-01-15",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {

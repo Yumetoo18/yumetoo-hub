@@ -1,0 +1,24 @@
+{
+  "lecon_num": 1,
+  "date": "2026-03-20",
+  "theme": "Premiers pas : la portée et le DO central",
+  "message_perso": "Bonjour Yumetoo ! 🎹 Bienvenue dans ton apprentissage du piano ! Je suis Piano Coach, ton professeur personnel. Nous allons commencer par les fondations essentielles : le solfège. C'est comme apprendre l'alphabet avant de lire des livres - indispensable pour devenir un vrai pianiste ! Let's go ! 🎵",
+  "echauffement": {
+    "titre": "Découverte de la portée et des premières notes",
+    "duree": "10 min",
+    "description": "📖 Découvrons la portée en clé de sol ! La portée, c'est comme une échelle musicale avec 5 lignes.\n\nPORTÉE EN CLÉ DE SOL :\n```\n    🎵 ─────── FA (5ème ligne)\n      ─ RÉ ── (4ème interligne)  \n    ─────── SI (4ème ligne)\n      ─ SOL ─ (3ème interligne)\n    ─────── SOL (3ème ligne)\n      ─ MI ── (2ème interligne)\n    ─────── FA (2ème ligne)  \n      ─ RÉ ── (1er interligne)\n    ─────── DO (1ère ligne)\n```\n\n🎯 EXERCICE : Répète 5 fois à voix haute en pointant chaque ligne :\n- 1ère ligne = MI\n- 2ème ligne = SOL  \n- 3ème ligne = SI\n- 4ème ligne = RÉ\n- 5ème ligne = FA\n\nAstuce mnémotechnique : \"**MI** petit **SOL**, **SI** tu es **RÉ**-veillé, tu auras une belle **FA**çade\" 🏠\n\nQuiz rapide : Sur quelle ligne se trouve le SOL ? (Réponse : 2ème ligne !)",
+    "partition": ""
+  },
+  "morceau": {
+    "titre": "Reconnaissance des notes au piano",
+    "duree": "15 min",
+    "difficulte": "Debutant",
+    "youtube": "https://www.youtube.com/watch?v=gQMmU_spCWY",
+    "instructions": "🎹 Maintenant, trouvons ces notes sur ton piano !\n\nÉTAPE 1 (5 min) : Trouve le DO central \n- Cherche un groupe de 2 touches noires, le DO blanc est juste à gauche\n- Place ton pouce droit (doigt 1) dessus : c'est ton DO de référence !\n\nÉTAPE 2 (10 min) : Joue la gamme DO-RÉ-MI-FA-SOL\n- DO = pouce droit (1)\n- RÉ = index droit (2)  \n- MI = majeur droit (3)\n- FA = annulaire droit (4)\n- SOL = auriculaire droit (5)\n\n🎵 Joue lentement en disant le nom de chaque note à voix haute. Répète 10 fois !\n\nDéfi : Peux-tu jouer SOL-FA-MI-RÉ-DO (en sens inverse) ? 🔄",
+    "partition": "X:1\nT:Gamme de Do - Main droite\nM:4/4\nK:C\nCDEFG|GFEDC|"
+  },
+  "tip": {
+    "titre": "La posture parfaite du pianiste 🪑",
+    "contenu": "Position magique pour bien jouer :\n- Assieds-toi au bord de ta chaise (pas complètement assis)\n- Dos droit, pieds bien au sol 🦶\n- Coudes légèrement écartés du corps\n- Mains arrondies comme si tu tenais une balle de tennis 🎾\n- Distance du clavier : tes bras doivent être légèrement fléchis\n\nTest : si tu laisses tomber tes bras le long du corps puis les remontes sur le clavier, c'est la bonne hauteur ! ✨"
+  }
+}
