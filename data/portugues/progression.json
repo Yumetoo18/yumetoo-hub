@@ -1,0 +1,57 @@
+{
+  "niveau_cecrl": "A0",
+  "aula_actuelle": 3,
+  "programme": {
+    "phase": "decouverte",
+    "phase_label": "Decouverte A0-A1",
+    "mois": 1,
+    "semaine": 2
+  },
+  "vocabulaire_appris": [
+    "Olá",
+    "Bom dia",
+    "Boa tarde",
+    "Boa noite",
+    "Como está?",
+    "Bem",
+    "Obrigado/Obrigada",
+    "Chamo-me",
+    "E você?",
+    "Sou",
+    "De onde é?",
+    "Prazer",
+    "Francês/Francesa",
+    "Fixe!",
+    "um",
+    "dois",
+    "três",
+    "por favor",
+    "quanto custa?",
+    "euro"
+  ],
+  "vocabulaire_total": 20,
+  "grammaire_couverte": [
+    "Accord de obrigado/obrigada",
+    "Verbe SER (être) - première personne",
+    "Accord des nationalités",
+    "Les nombres de 1 à 10 et leurs accords"
+  ],
+  "points_forts": [],
+  "points_faibles": [],
+  "mises_en_situation_faites": [
+    "Salutations de rue",
+    "Présentations simples",
+    "Au marché - acheter et demander le prix"
+  ],
+  "culture_sujets_couverts": [
+    "Festival International du Chocolat d'Óbidos",
+    "Ginjinha",
+    "Fado de Coimbra et prénoms portugais",
+    "Mercado da Ribeira - Time Out Market Lisbonne"
+  ],
+  "jours_sans_feedback": 6,
+  "dernier_feedback": null,
+  "derniere_aula_envoyee": "2024-12-30",
+  "historique_feedback": [],
+  "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
+}
