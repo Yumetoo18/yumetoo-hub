@@ -1,33 +1,24 @@
 {
-  "niveau": "faux_debutant",
-  "lecon_actuelle": 3,
+  "niveau": "debutant",
+  "lecon_actuelle": 0,
   "programme": {
     "phase": "bases",
     "phase_label": "Les Bases",
     "mois": 1,
     "semaine": 1
   },
-  "morceaux_en_cours": [
-    "Lecture des notes Do à Sol - Exercice de solfège"
-  ],
+  "morceaux_en_cours": [],
   "morceaux_maitrises": [],
   "points_forts": [],
-  "points_faibles": [
-    "Régularité dans la pratique"
-  ],
-  "exercices_completes": 3,
-  "jours_sans_feedback": 4,
-  "dernier_feedback": "Bonjour 👋,\r\n \r\n\r\n_La Méthode Piano en ligne_ ferme ses portes demain soir à minuit.\r\n \r\n\r\nAprès cette deadline, il ne sera plus possible de s'inscrire et de\r\nbénéficier du prix le plus bas jamais proposé.\r\n \r\n\r\nSI VOUS ME LISEZ TOUJOURS, APRÈS TOUS CES EMAILS, IL Y A DEUX CAS DE\r\nFIGURE : \r\n \r\n\r\n1. Vous avez décidé de rejoindre la méthode : si c'est votre cas,\r\ncliquez ici pour vous inscrire\r\n[https://www.pianoenligne.fr/pianoenligne-2026/]\r\n[https://www.pianoenligne.fr/pianoenligne-2026/](ça ne",
-  "derniere_lecon_envoyee": "2024-12-22",
-  "historique_feedback": [
-    {
-      "date": "2026-03-19",
-      "feedback": "Bonjour 👋,\r\n \r\n\r\n_La Méthode Piano en ligne_ ferme ses portes demain soir à minuit.\r\n \r\n\r\nAprès cette deadline, il ne sera plus possible de s'inscrire et de\r\nbénéficier du prix le plus bas jamais proposé.\r\n \r\n\r\nSI VOUS ME LISEZ TOUJOURS, APRÈS TOUS CES EMAILS, IL Y A DEUX CAS DE\r\nFIGURE : \r\n \r\n\r\n1. Vous avez décidé de rejoindre la méthode : si c'est votre cas,\r\ncliquez ici pour vous inscrire\r\n[https://www.pianoenligne.fr/pianoenligne-2026/]\r\n[https://www.pianoenligne.fr/pianoenligne-2026/](ça ne"
-    }
-  ],
-  "objectif_long_terme": "5 ans - du faux debutant au pianiste accompli",
+  "points_faibles": [],
+  "exercices_completes": 0,
+  "jours_sans_feedback": 0,
+  "dernier_feedback": null,
+  "derniere_lecon_envoyee": null,
+  "historique_feedback": [],
+  "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
-    "classique": true,
+    "classique": false,
     "pop": false,
     "jazz": false
   }
