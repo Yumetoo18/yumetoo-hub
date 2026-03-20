@@ -1,0 +1,51 @@
+{
+  "solde": 10.5,
+  "capital_initial": 10.0,
+  "objectif": 1000.0,
+  "benefice_retire": 0.0,
+  "paris": [
+    {
+      "date": "2026-03-18",
+      "type": "combine",
+      "selections": [
+        "Bayern Munich victoire vs Atalanta",
+        "Liverpool victoire vs Galatasaray"
+      ],
+      "cote": 1.75,
+      "mise": 10.0,
+      "gain": 17.5,
+      "resultat": "WIN"
+    },
+    {
+      "date": "2026-03-20",
+      "type": "combine",
+      "selections": [
+        "Naples victoire vs Cagliari",
+        "Aston Villa victoire vs Lille"
+      ],
+      "cote": 3.15,
+      "mise": 3.5,
+      "gain_potentiel": 11.03,
+      "resultat": "EN ATTENTE"
+    },
+    {
+      "date": "2026-03-20",
+      "type": "combine",
+      "selections": [
+        "Naples victoire vs Cagliari",
+        "Bournemouth ou nul (1X)"
+      ],
+      "cote": 3.61,
+      "mise": 2.0,
+      "gain_potentiel": 7.22,
+      "resultat": "EN ATTENTE"
+    }
+  ],
+  "stats": {
+    "total_paris": 3,
+    "paris_gagnes": 1,
+    "paris_perdus": 0,
+    "taux_reussite": 33,
+    "roi": 5
+  }
+}
