@@ -3,9 +3,32 @@
   "capital_initial": 14.5,
   "objectif": 1000.0,
   "benefice_retire": 0.0,
-  "paris": [],
+  "paris": [
+    {
+      "date": "2026-03-20",
+      "type": "combine",
+      "selections": [
+        {
+          "equipe": "RB Leipzig",
+          "adversaire": "Hoffenheim",
+          "choix": "Victoire Leipzig",
+          "cote": 1.65
+        },
+        {
+          "equipe": "Cagliari",
+          "adversaire": "Napoli",
+          "choix": "Victoire Napoli",
+          "cote": 1.7
+        }
+      ],
+      "cote": 2.81,
+      "mise": 3.0,
+      "gain_potentiel": 8.43,
+      "resultat": "EN ATTENTE"
+    }
+  ],
   "stats": {
-    "total_paris": 0,
+    "total_paris": 1,
     "paris_gagnes": 0,
     "paris_perdus": 0,
     "taux_reussite": 0,

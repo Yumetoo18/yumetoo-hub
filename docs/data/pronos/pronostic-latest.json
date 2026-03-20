@@ -1,0 +1,19 @@
+{
+  "date": "2026-03-20",
+  "solde": 14.5,
+  "mise_du_jour": "3.00",
+  "plan": {
+    "type": "combine",
+    "confiance": "JAUNE",
+    "selections": "",
+    "cote_totale": "2.81"
+  },
+  "resultats_veille": "Aucun pari en attente dans le portefeuille. Nous démarrons aujourd'hui avec un capital de 14,5€ intact.",
+  "stats": {
+    "total_paris": 1,
+    "paris_gagnes": 0,
+    "paris_perdus": 0,
+    "taux_reussite": 0,
+    "roi": 0
+  }
+}
