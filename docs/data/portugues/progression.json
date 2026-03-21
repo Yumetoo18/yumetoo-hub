@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 1,
+  "aula_actuelle": 2,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -15,23 +15,36 @@
     "como está",
     "bem",
     "obrigado",
-    "obrigada"
+    "obrigada",
+    "eu sou",
+    "tu és",
+    "o meu nome é",
+    "como se chama",
+    "prazer",
+    "de onde é",
+    "português",
+    "portuguesa",
+    "francês",
+    "francesa"
   ],
-  "vocabulaire_total": 8,
+  "vocabulaire_total": 16,
   "grammaire_couverte": [
-    "accord_obrigado_obrigada"
+    "accord_obrigado_obrigada",
+    "verbe_ser_present"
   ],
   "points_forts": [],
   "points_faibles": [],
   "mises_en_situation_faites": [
-    "salutations_basiques"
+    "salutations_basiques",
+    "presentation_personnelle"
   ],
   "culture_sujets_couverts": [
-    "festival_chocolat_obidos_2026"
+    "festival_chocolat_obidos_2026",
+    "guimaraes_berceau_portugal"
   ],
-  "jours_sans_feedback": 1,
+  "jours_sans_feedback": 3,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2024-12-28",
+  "derniere_aula_envoyee": "2024-12-29",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
