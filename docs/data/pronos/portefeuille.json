@@ -1,5 +1,5 @@
 {
-  "solde": 14.5,
+  "solde": 20.26,
   "capital_initial": 14.5,
   "objectif": 1000.0,
   "benefice_retire": 0.0,
@@ -21,17 +21,40 @@
           "cote": 1.7
         }
       ],
-      "cote": 2.81,
+      "cote": 1.92,
       "mise": 3.0,
       "gain_potentiel": 8.43,
+      "resultat": "WIN",
+      "gain_reel": 5.76
+    },
+    {
+      "date": "2026-03-21",
+      "type": "combine",
+      "selections": [
+        {
+          "equipe": "AC Milan",
+          "adversaire": "Torino",
+          "choix": "Victoire Milan",
+          "cote": 1.6
+        },
+        {
+          "equipe": "Lyon",
+          "adversaire": "Celta Vigo",
+          "choix": "Victoire Lyon",
+          "cote": 1.75
+        }
+      ],
+      "cote": 2.8,
+      "mise": 4.0,
+      "gain_potentiel": 11.2,
       "resultat": "EN ATTENTE"
     }
   ],
   "stats": {
-    "total_paris": 1,
-    "paris_gagnes": 0,
+    "total_paris": 2,
+    "paris_gagnes": 1,
     "paris_perdus": 0,
-    "taux_reussite": 0,
-    "roi": 0
+    "taux_reussite": 50.0,
+    "roi": 39.7
   }
 }
