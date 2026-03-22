@@ -48,13 +48,41 @@
       "mise": 4.0,
       "gain_potentiel": 11.2,
       "resultat": "EN ATTENTE"
+    },
+    {
+      "date": "2026-03-22",
+      "type": "combine",
+      "selections": [
+        {
+          "equipe": "Barcelona",
+          "adversaire": "Rayo Vallecano",
+          "choix": "Victoire Barcelona",
+          "cote": 1.25
+        },
+        {
+          "equipe": "Atalanta",
+          "adversaire": "Verona",
+          "choix": "Victoire Atalanta",
+          "cote": 1.45
+        },
+        {
+          "equipe": "Newcastle",
+          "adversaire": "Sunderland",
+          "choix": "Victoire Newcastle",
+          "cote": 1.75
+        }
+      ],
+      "cote": 3.17,
+      "mise": 4.0,
+      "gain_potentiel": 12.68,
+      "resultat": "EN ATTENTE"
     }
   ],
   "stats": {
-    "total_paris": 2,
+    "total_paris": 1,
     "paris_gagnes": 1,
     "paris_perdus": 0,
-    "taux_reussite": 50.0,
+    "taux_reussite": 100.0,
     "roi": 39.7
   }
 }
