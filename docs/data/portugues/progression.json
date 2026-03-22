@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 2,
+  "aula_actuelle": 3,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -25,12 +25,22 @@
     "português",
     "portuguesa",
     "francês",
-    "francesa"
+    "francesa",
+    "nacionalidade",
+    "espanhol",
+    "espanhola",
+    "alemão",
+    "alemã",
+    "inglês",
+    "inglesa",
+    "onde",
+    "viver"
   ],
-  "vocabulaire_total": 16,
+  "vocabulaire_total": 26,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
-    "verbe_ser_present"
+    "verbe_ser_present",
+    "accord_nationalites"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -40,11 +50,12 @@
   ],
   "culture_sujets_couverts": [
     "festival_chocolat_obidos_2026",
-    "guimaraes_berceau_portugal"
+    "guimaraes_berceau_portugal",
+    "fado_coimbra_vs_lisboa"
   ],
-  "jours_sans_feedback": 3,
+  "jours_sans_feedback": 5,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2024-12-29",
+  "derniere_aula_envoyee": "2024-12-30",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
