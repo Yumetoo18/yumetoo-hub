@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 3,
+  "lecon_actuelle": 4,
   "programme": {
     "phase": "bases",
     "phase_label": "Les Bases",
@@ -8,17 +8,19 @@
     "semaine": 2
   },
   "morceaux_en_cours": [
-    "Gamme de Do - Main droite (révision)",
-    "Gamme de Do - Main gauche (introduction)",
-    "Lecture des notes en clé de Sol"
+    "Gamme de Do - Main droite (consolidation)",
+    "Gamme de Do - Main gauche (révision)",
+    "Quiz reconnaissance notes clé de Sol"
   ],
   "morceaux_maitrises": [],
   "points_forts": [],
-  "points_faibles": [],
+  "points_faibles": [
+    "Manque de régularité (6 jours sans pratique)"
+  ],
   "exercices_completes": 3,
-  "jours_sans_feedback": 5,
+  "jours_sans_feedback": 7,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2024-01-23",
+  "derniere_lecon_envoyee": "2024-01-30",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
