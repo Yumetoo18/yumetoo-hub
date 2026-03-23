@@ -1,5 +1,5 @@
 {
-  "solde": 20.26,
+  "solde": 16.26,
   "capital_initial": 14.5,
   "objectif": 1000.0,
   "benefice_retire": 0.0,
@@ -75,6 +75,28 @@
       "cote": 3.17,
       "mise": 4.0,
       "gain_potentiel": 12.68,
+      "resultat": "EN ATTENTE"
+    },
+    {
+      "date": "2026-03-23",
+      "type": "combine",
+      "selections": [
+        {
+          "equipe": "Naples",
+          "adversaire": "Cagliari",
+          "choix": "Victoire Naples",
+          "cote": 1.8
+        },
+        {
+          "equipe": "RB Leipzig",
+          "adversaire": "Hoffenheim",
+          "choix": "Victoire Leipzig",
+          "cote": 1.65
+        }
+      ],
+      "cote": 2.97,
+      "mise": 4.0,
+      "gain_potentiel": 11.88,
       "resultat": "EN ATTENTE"
     }
   ],
