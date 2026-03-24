@@ -98,13 +98,35 @@
       "mise": 4.0,
       "gain_potentiel": 11.88,
       "resultat": "EN ATTENTE"
+    },
+    {
+      "date": "2026-03-24",
+      "type": "combine",
+      "selections": [
+        {
+          "equipe": "Naples",
+          "adversaire": "Cagliari",
+          "choix": "Victoire Naples",
+          "cote": 1.75
+        },
+        {
+          "equipe": "RB Leipzig",
+          "adversaire": "Hoffenheim",
+          "choix": "Victoire Leipzig",
+          "cote": 1.65
+        }
+      ],
+      "cote": 2.89,
+      "mise": 3.0,
+      "gain_potentiel": 8.67,
+      "resultat": "EN ATTENTE"
     }
   ],
   "stats": {
-    "total_paris": 1,
+    "total_paris": 2,
     "paris_gagnes": 1,
     "paris_perdus": 0,
-    "taux_reussite": 100.0,
+    "taux_reussite": 50.0,
     "roi": 39.7
   }
 }
