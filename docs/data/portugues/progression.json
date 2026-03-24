@@ -1,11 +1,11 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 4,
+  "aula_actuelle": 5,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
     "mois": 1,
-    "semaine": 2
+    "semaine": 3
   },
   "vocabulaire_appris": [
     "olá",
@@ -42,14 +42,22 @@
     "irmã",
     "filho",
     "filha",
-    "anos"
+    "anos",
+    "casa",
+    "quarto",
+    "cozinha",
+    "casa de banho",
+    "sala",
+    "pequeno",
+    "grande"
   ],
-  "vocabulaire_total": 34,
+  "vocabulaire_total": 41,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
     "accord_nationalites",
-    "possessifs_meu_minha"
+    "possessifs_meu_minha",
+    "articles_definis_o_a_os_as"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -61,11 +69,12 @@
     "festival_chocolat_obidos_2026",
     "guimaraes_berceau_portugal",
     "fado_coimbra_vs_lisboa",
-    "importance_famille_portugal"
+    "importance_famille_portugal",
+    "azulejos_carreaux_faience"
   ],
-  "jours_sans_feedback": 7,
+  "jours_sans_feedback": 9,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2024-12-31",
+  "derniere_aula_envoyee": "2025-01-01",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
