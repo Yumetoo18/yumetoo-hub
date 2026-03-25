@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 5,
+  "aula_actuelle": 6,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -49,15 +49,24 @@
     "casa de banho",
     "sala",
     "pequeno",
-    "grande"
+    "grande",
+    "gostar",
+    "não gostar",
+    "muito",
+    "música",
+    "comida",
+    "desporto",
+    "filme",
+    "livro"
   ],
-  "vocabulaire_total": 41,
+  "vocabulaire_total": 49,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
     "accord_nationalites",
     "possessifs_meu_minha",
-    "articles_definis_o_a_os_as"
+    "articles_definis_o_a_os_as",
+    "verbe_gostar_preposition_de"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -70,11 +79,12 @@
     "guimaraes_berceau_portugal",
     "fado_coimbra_vs_lisboa",
     "importance_famille_portugal",
-    "azulejos_carreaux_faience"
+    "azulejos_carreaux_faience",
+    "pasteis_nata_expression_fixe"
   ],
-  "jours_sans_feedback": 9,
+  "jours_sans_feedback": 11,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-01",
+  "derniere_aula_envoyee": "2025-01-02",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
