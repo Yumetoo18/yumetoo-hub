@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 6,
+  "aula_actuelle": 7,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -57,16 +57,23 @@
     "comida",
     "desporto",
     "filme",
-    "livro"
+    "livro",
+    "trabalhar",
+    "comer",
+    "beber",
+    "estudar",
+    "dormir",
+    "manhã"
   ],
-  "vocabulaire_total": 49,
+  "vocabulaire_total": 55,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
     "accord_nationalites",
     "possessifs_meu_minha",
     "articles_definis_o_a_os_as",
-    "verbe_gostar_preposition_de"
+    "verbe_gostar_preposition_de",
+    "verbes_reguliers_present_ar_er_ir"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -80,11 +87,12 @@
     "fado_coimbra_vs_lisboa",
     "importance_famille_portugal",
     "azulejos_carreaux_faience",
-    "pasteis_nata_expression_fixe"
+    "pasteis_nata_expression_fixe",
+    "cafe_portugais_bica_culture"
   ],
-  "jours_sans_feedback": 11,
+  "jours_sans_feedback": 13,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-02",
+  "derniere_aula_envoyee": "2025-01-03",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
