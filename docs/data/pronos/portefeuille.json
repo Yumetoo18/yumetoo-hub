@@ -142,13 +142,35 @@
       "mise": 3.0,
       "gain_potentiel": 6.84,
       "resultat": "EN ATTENTE"
+    },
+    {
+      "date": "2026-03-26",
+      "type": "combine",
+      "selections": [
+        {
+          "equipe": "Italie",
+          "adversaire": "Irlande du Nord",
+          "choix": "Victoire Italie",
+          "cote": 1.35
+        },
+        {
+          "equipe": "Danemark",
+          "adversaire": "Macédoine du Nord",
+          "choix": "Victoire Danemark",
+          "cote": 1.45
+        }
+      ],
+      "cote": 1.96,
+      "mise": 2.5,
+      "gain_potentiel": 4.9,
+      "resultat": "EN ATTENTE"
     }
   ],
   "stats": {
-    "total_paris": 3,
+    "total_paris": 4,
     "paris_gagnes": 1,
     "paris_perdus": 0,
-    "taux_reussite": 33.3,
+    "taux_reussite": 25.0,
     "roi": 39.7
   }
 }
