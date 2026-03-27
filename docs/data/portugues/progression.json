@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 7,
+  "aula_actuelle": 8,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -63,9 +63,16 @@
     "beber",
     "estudar",
     "dormir",
-    "manhã"
+    "manhã",
+    "tarde",
+    "noite",
+    "ver",
+    "televisão",
+    "falar",
+    "ouvir",
+    "ler"
   ],
-  "vocabulaire_total": 55,
+  "vocabulaire_total": 62,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -73,7 +80,8 @@
     "possessifs_meu_minha",
     "articles_definis_o_a_os_as",
     "verbe_gostar_preposition_de",
-    "verbes_reguliers_present_ar_er_ir"
+    "verbes_reguliers_present_ar_er_ir",
+    "moments_journee_de_manha_a_tarde_a_noite"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -88,11 +96,12 @@
     "importance_famille_portugal",
     "azulejos_carreaux_faience",
     "pasteis_nata_expression_fixe",
-    "cafe_portugais_bica_culture"
+    "cafe_portugais_bica_culture",
+    "horaires_repas_portugal_cafezinho"
   ],
-  "jours_sans_feedback": 13,
+  "jours_sans_feedback": 15,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-03",
+  "derniere_aula_envoyee": "2025-01-16",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
