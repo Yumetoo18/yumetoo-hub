@@ -189,10 +189,10 @@
     }
   ],
   "stats": {
-    "total_paris": 5,
+    "total_paris": 8,
     "paris_gagnes": 1,
     "paris_perdus": 0,
-    "taux_reussite": 20.0,
+    "taux_reussite": 12.5,
     "roi": 39.7
   }
 }
