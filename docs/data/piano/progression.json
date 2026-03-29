@@ -1,31 +1,31 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 9,
+  "lecon_actuelle": 10,
   "programme": {
     "phase": "bases",
     "phase_label": "Les Bases",
     "mois": 2,
-    "semaine": 1
+    "semaine": 2
   },
   "morceaux_en_cours": [
-    "Quiz reconnaissance notes clé de Sol (révision post-pause)",
-    "Gamme de Do - Consolidation progressive",
-    "Lecture fluide des notes sur portée - reprise"
+    "Quiz reconnaissance notes clé de Sol (révision consolidée)",
+    "Gamme de Do - 5 premières notes (Do-Ré-Mi-Fa-Sol)",
+    "Coordination main droite - doigtés de base"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
     "Retour motivé après pause",
-    "Prêt à reprendre les bases"
+    "Prêt à reprendre les bases progressivement"
   ],
   "points_faibles": [
-    "Pause de 16 jours - consolidation nécessaire",
+    "Reprise après pause - consolidation en cours",
     "Régularité à reconstruire",
-    "Bases de solfège à renforcer progressivement"
+    "Lecture de notes à renforcer"
   ],
   "exercices_completes": 3,
-  "jours_sans_feedback": 17,
+  "jours_sans_feedback": 19,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2024-12-22",
+  "derniere_lecon_envoyee": "2025-01-09",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
