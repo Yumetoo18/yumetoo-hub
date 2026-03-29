@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 9,
+  "aula_actuelle": 10,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -78,9 +78,17 @@
     "chegar",
     "almoçar",
     "jantar",
-    "deitar-se"
+    "deitar-se",
+    "cor",
+    "azul",
+    "vermelho",
+    "verde",
+    "amarelo",
+    "branco",
+    "preto",
+    "bonito"
   ],
-  "vocabulaire_total": 70,
+  "vocabulaire_total": 78,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -90,7 +98,8 @@
     "verbe_gostar_preposition_de",
     "verbes_reguliers_present_ar_er_ir",
     "moments_journee_de_manha_a_tarde_a_noite",
-    "verbes_pronominaux_levantar_se_deitar_se"
+    "verbes_pronominaux_levantar_se_deitar_se",
+    "accord_adjectifs_couleurs_qualite"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -107,11 +116,12 @@
     "pasteis_nata_expression_fixe",
     "cafe_portugais_bica_culture",
     "horaires_repas_portugal_cafezinho",
-    "petit_dejeuner_portugais_fixe"
+    "petit_dejeuner_portugais_fixe",
+    "azulejos_art_bleu_blanc_portugal"
   ],
-  "jours_sans_feedback": 17,
+  "jours_sans_feedback": 19,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-17",
+  "derniere_aula_envoyee": "2025-01-18",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
