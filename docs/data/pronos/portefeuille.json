@@ -1,5 +1,5 @@
 {
-  "solde": 10.76,
+  "solde": 8.76,
   "capital_initial": 14.5,
   "objectif": 1000.0,
   "benefice_retire": 0.0,
@@ -186,13 +186,35 @@
       "mise": 2.5,
       "gain_potentiel": 4.4,
       "resultat": "EN ATTENTE"
+    },
+    {
+      "date": "2026-03-30",
+      "type": "combine",
+      "selections": [
+        {
+          "equipe": "Lyon",
+          "adversaire": "Angers",
+          "choix": "Victoire Lyon",
+          "cote": 1.85
+        },
+        {
+          "equipe": "AS Monaco",
+          "adversaire": "Marseille",
+          "choix": "Monaco ou match nul (1X)",
+          "cote": 1.3
+        }
+      ],
+      "cote": 2.41,
+      "mise": 2.0,
+      "gain_potentiel": 4.82,
+      "resultat": "EN ATTENTE"
     }
   ],
   "stats": {
-    "total_paris": 8,
+    "total_paris": 9,
     "paris_gagnes": 1,
     "paris_perdus": 0,
-    "taux_reussite": 12.5,
+    "taux_reussite": 11.1,
     "roi": 39.7
   }
 }
