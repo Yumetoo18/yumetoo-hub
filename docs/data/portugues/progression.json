@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 10,
+  "aula_actuelle": 11,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -86,9 +86,16 @@
     "amarelo",
     "branco",
     "preto",
-    "bonito"
+    "bonito",
+    "roupa",
+    "camisa",
+    "calças",
+    "vestido",
+    "sapatos",
+    "vestir",
+    "usar"
   ],
-  "vocabulaire_total": 78,
+  "vocabulaire_total": 85,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -99,7 +106,8 @@
     "verbes_reguliers_present_ar_er_ir",
     "moments_journee_de_manha_a_tarde_a_noite",
     "verbes_pronominaux_levantar_se_deitar_se",
-    "accord_adjectifs_couleurs_qualite"
+    "accord_adjectifs_couleurs_qualite",
+    "verbes_vestir_usar_porter_vetements"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -117,9 +125,10 @@
     "cafe_portugais_bica_culture",
     "horaires_repas_portugal_cafezinho",
     "petit_dejeuner_portugais_fixe",
-    "azulejos_art_bleu_blanc_portugal"
+    "azulejos_art_bleu_blanc_portugal",
+    "style_portugais_estar_a_dar"
   ],
-  "jours_sans_feedback": 19,
+  "jours_sans_feedback": 21,
   "dernier_feedback": null,
   "derniere_aula_envoyee": "2025-01-18",
   "historique_feedback": [],
