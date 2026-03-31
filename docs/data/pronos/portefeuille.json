@@ -1,5 +1,5 @@
 {
-  "solde": 8.76,
+  "solde": 7.26,
   "capital_initial": 14.5,
   "objectif": 1000.0,
   "benefice_retire": 0.0,
@@ -208,13 +208,35 @@
       "mise": 2.0,
       "gain_potentiel": 4.82,
       "resultat": "EN ATTENTE"
+    },
+    {
+      "date": "2026-03-31",
+      "type": "combine",
+      "selections": [
+        {
+          "equipe": "FC Porto",
+          "adversaire": "Nottingham Forest",
+          "choix": "Victoire Porto",
+          "cote": 1.65
+        },
+        {
+          "equipe": "Mayence",
+          "adversaire": "Strasbourg",
+          "choix": "Plus de 1.5 buts",
+          "cote": 1.45
+        }
+      ],
+      "cote": 2.39,
+      "mise": 1.5,
+      "gain_potentiel": 3.59,
+      "resultat": "EN ATTENTE"
     }
   ],
   "stats": {
-    "total_paris": 9,
+    "total_paris": 10,
     "paris_gagnes": 1,
     "paris_perdus": 0,
-    "taux_reussite": 11.1,
+    "taux_reussite": 10.0,
     "roi": 39.7
   }
 }
