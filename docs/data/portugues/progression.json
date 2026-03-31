@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 11,
+  "aula_actuelle": 12,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -93,9 +93,16 @@
     "vestido",
     "sapatos",
     "vestir",
-    "usar"
+    "usar",
+    "pão",
+    "queijo",
+    "carne",
+    "peixe",
+    "fruta",
+    "legumes",
+    "saudável"
   ],
-  "vocabulaire_total": 85,
+  "vocabulaire_total": 93,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -107,7 +114,8 @@
     "moments_journee_de_manha_a_tarde_a_noite",
     "verbes_pronominaux_levantar_se_deitar_se",
     "accord_adjectifs_couleurs_qualite",
-    "verbes_vestir_usar_porter_vetements"
+    "verbes_vestir_usar_porter_vetements",
+    "verbe_comer_conjugaison_present"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -126,11 +134,12 @@
     "horaires_repas_portugal_cafezinho",
     "petit_dejeuner_portugais_fixe",
     "azulejos_art_bleu_blanc_portugal",
-    "style_portugais_estar_a_dar"
+    "style_portugais_estar_a_dar",
+    "gastronomie_grand_chapitre_2026"
   ],
-  "jours_sans_feedback": 21,
+  "jours_sans_feedback": 23,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-18",
+  "derniere_aula_envoyee": "2025-01-19",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
