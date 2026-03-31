@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 11,
+  "lecon_actuelle": 12,
   "programme": {
     "phase": "bases",
     "phase_label": "Les Bases",
@@ -8,24 +8,24 @@
     "semaine": 3
   },
   "morceaux_en_cours": [
-    "Quiz reconnaissance notes clé de Sol - consolidation reprise",
-    "Gamme de Do - 5 premières notes (révision approfondie)",
-    "Coordination main droite - retour aux fondamentaux"
+    "Quiz reconnaissance notes clé de Sol - session de reprise",
+    "Gamme de Do - 5 premières notes (consolidation douce)",
+    "Remobilisation progressive après pause"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Retour après pause - attitude positive",
-    "Bases solides à consolider"
+    "Retour après pause - session de reprise adaptée",
+    "Bases solides à consolider progressivement"
   ],
   "points_faibles": [
-    "20 jours sans feedback - besoin de remobilisation douce",
-    "Régularité à reconstruire progressivement",
-    "Consolidation nécessaire avant nouvelle matière"
+    "22 jours sans feedback - remobilisation en cours",
+    "Régularité à reconstruire avec bienveillance",
+    "Besoin de sessions courtes et motivantes"
   ],
   "exercices_completes": 3,
-  "jours_sans_feedback": 21,
+  "jours_sans_feedback": 23,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2025-01-27",
+  "derniere_lecon_envoyee": "2025-01-28",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
