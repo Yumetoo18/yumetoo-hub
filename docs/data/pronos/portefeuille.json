@@ -1,5 +1,5 @@
 {
-  "solde": 7.26,
+  "solde": 5.76,
   "capital_initial": 14.5,
   "objectif": 1000.0,
   "benefice_retire": 0.0,
@@ -230,13 +230,35 @@
       "mise": 1.5,
       "gain_potentiel": 3.59,
       "resultat": "EN ATTENTE"
+    },
+    {
+      "date": "2026-04-01",
+      "type": "combine",
+      "selections": [
+        {
+          "equipe": "Bayern Munich Women",
+          "adversaire": "Manchester United Women",
+          "choix": "Victoire Bayern Munich Women",
+          "cote": 1.45
+        },
+        {
+          "equipe": "Montenegro",
+          "adversaire": "Moldova",
+          "choix": "Victoire Montenegro",
+          "cote": 1.3
+        }
+      ],
+      "cote": 1.89,
+      "mise": 1.5,
+      "gain_potentiel": 2.84,
+      "resultat": "EN ATTENTE"
     }
   ],
   "stats": {
-    "total_paris": 10,
+    "total_paris": 11,
     "paris_gagnes": 1,
     "paris_perdus": 0,
-    "taux_reussite": 10.0,
+    "taux_reussite": 9.1,
     "roi": 39.7
   }
 }
