@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 12,
+  "aula_actuelle": 13,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -100,9 +100,16 @@
     "peixe",
     "fruta",
     "legumes",
-    "saudável"
+    "saudável",
+    "água",
+    "café",
+    "chá",
+    "sumo",
+    "vinho",
+    "cerveja",
+    "sede"
   ],
-  "vocabulaire_total": 93,
+  "vocabulaire_total": 100,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -115,7 +122,8 @@
     "verbes_pronominaux_levantar_se_deitar_se",
     "accord_adjectifs_couleurs_qualite",
     "verbes_vestir_usar_porter_vetements",
-    "verbe_comer_conjugaison_present"
+    "verbe_comer_conjugaison_present",
+    "verbe_ter_present_expressions"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -135,11 +143,12 @@
     "petit_dejeuner_portugais_fixe",
     "azulejos_art_bleu_blanc_portugal",
     "style_portugais_estar_a_dar",
-    "gastronomie_grand_chapitre_2026"
+    "gastronomie_grand_chapitre_2026",
+    "culture_cafe_bica_portugal"
   ],
-  "jours_sans_feedback": 23,
+  "jours_sans_feedback": 25,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-19",
+  "derniere_aula_envoyee": "2025-01-20",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
