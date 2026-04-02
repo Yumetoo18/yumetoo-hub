@@ -1,11 +1,11 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 13,
+  "aula_actuelle": 14,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
     "mois": 1,
-    "semaine": 3
+    "semaine": 4
   },
   "vocabulaire_appris": [
     "olá",
@@ -107,9 +107,17 @@
     "sumo",
     "vinho",
     "cerveja",
-    "sede"
+    "sede",
+    "tempo",
+    "sol",
+    "chuva",
+    "vento",
+    "frio",
+    "calor",
+    "nublado",
+    "céu"
   ],
-  "vocabulaire_total": 100,
+  "vocabulaire_total": 108,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -123,7 +131,8 @@
     "accord_adjectifs_couleurs_qualite",
     "verbes_vestir_usar_porter_vetements",
     "verbe_comer_conjugaison_present",
-    "verbe_ter_present_expressions"
+    "verbe_ter_present_expressions",
+    "expressions_temps_esta_faz_meteorologie"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -144,11 +153,12 @@
     "azulejos_art_bleu_blanc_portugal",
     "style_portugais_estar_a_dar",
     "gastronomie_grand_chapitre_2026",
-    "culture_cafe_bica_portugal"
+    "culture_cafe_bica_portugal",
+    "climat_portugal_expression_estar_nas_tintas"
   ],
-  "jours_sans_feedback": 25,
+  "jours_sans_feedback": 27,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-20",
+  "derniere_aula_envoyee": "2025-01-21",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
