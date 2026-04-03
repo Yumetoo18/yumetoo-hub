@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 14,
+  "aula_actuelle": 15,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -115,9 +115,17 @@
     "frio",
     "calor",
     "nublado",
-    "céu"
+    "céu",
+    "autocarro",
+    "comboio",
+    "carro",
+    "metro",
+    "táxi",
+    "estação",
+    "bilhete",
+    "partir"
   ],
-  "vocabulaire_total": 108,
+  "vocabulaire_total": 116,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -132,7 +140,8 @@
     "verbes_vestir_usar_porter_vetements",
     "verbe_comer_conjugaison_present",
     "verbe_ter_present_expressions",
-    "expressions_temps_esta_faz_meteorologie"
+    "expressions_temps_esta_faz_meteorologie",
+    "transports_prepositions_de_no_na_para"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -154,11 +163,12 @@
     "style_portugais_estar_a_dar",
     "gastronomie_grand_chapitre_2026",
     "culture_cafe_bica_portugal",
-    "climat_portugal_expression_estar_nas_tintas"
+    "climat_portugal_expression_estar_nas_tintas",
+    "transports_lisbonne_tram_28_elevadores"
   ],
-  "jours_sans_feedback": 27,
+  "jours_sans_feedback": 29,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-21",
+  "derniere_aula_envoyee": "2025-01-22",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
