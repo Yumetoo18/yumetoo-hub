@@ -1,30 +1,30 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 15,
+  "lecon_actuelle": 16,
   "programme": {
     "phase": "bases",
     "phase_label": "Les Bases",
-    "mois": 2,
-    "semaine": 4
+    "mois": 3,
+    "semaine": 1
   },
   "morceaux_en_cours": [
-    "Mini-quiz reconnaissance notes - session de consolidation",
-    "Gamme de Do version micro (5 notes) - retour progressif",
-    "Sessions courtes 15 minutes - reconstruction de l'habitude"
+    "Quiz reconnaissance notes - réactivation mémoire",
+    "Gamme de Do micro (5 notes) - retour après pause",
+    "Sessions 10 minutes - reconstruction habitude douce"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Format adapté à la reprise longue durée",
-    "Exercices de reconnaissance maintenus",
-    "Approche bienveillante pour remotivation"
+    "Format micro-sessions adapté à la reprise",
+    "Approche bienveillante post-pause",
+    "Exercices de base maintenus"
   ],
   "points_faibles": [
-    "28 jours sans feedback - régularité à reconstruire priorité absolue",
-    "Mémoire musculaire à réactiver",
-    "Motivation à relancer avec micro-sessions"
+    "30 jours sans pratique - remise en route nécessaire",
+    "Mémoire musculaire à réactiver progressivement",
+    "Confiance à reconstruire avec micro-objectifs"
   ],
   "exercices_completes": 3,
-  "jours_sans_feedback": 29,
+  "jours_sans_feedback": 31,
   "dernier_feedback": null,
   "derniere_lecon_envoyee": "2025-01-31",
   "historique_feedback": [],
