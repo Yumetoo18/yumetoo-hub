@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 15,
+  "aula_actuelle": 16,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -123,9 +123,18 @@
     "táxi",
     "estação",
     "bilhete",
-    "partir"
+    "partir",
+    "horas",
+    "minutos",
+    "meio-dia",
+    "meia-noite",
+    "meia",
+    "quarto",
+    "relógio",
+    "cedo",
+    "tarde"
   ],
-  "vocabulaire_total": 116,
+  "vocabulaire_total": 125,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -141,7 +150,8 @@
     "verbe_comer_conjugaison_present",
     "verbe_ter_present_expressions",
     "expressions_temps_esta_faz_meteorologie",
-    "transports_prepositions_de_no_na_para"
+    "transports_prepositions_de_no_na_para",
+    "heure_que_horas_sao_singulier_pluriel"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -164,11 +174,12 @@
     "gastronomie_grand_chapitre_2026",
     "culture_cafe_bica_portugal",
     "climat_portugal_expression_estar_nas_tintas",
-    "transports_lisbonne_tram_28_elevadores"
+    "transports_lisbonne_tram_28_elevadores",
+    "horaires_portugais_ponctualite_fixe"
   ],
-  "jours_sans_feedback": 29,
+  "jours_sans_feedback": 31,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-22",
+  "derniere_aula_envoyee": "2025-01-23",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
