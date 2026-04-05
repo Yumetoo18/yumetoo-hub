@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 16,
+  "aula_actuelle": 17,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -132,9 +132,17 @@
     "quarto",
     "relógio",
     "cedo",
-    "tarde"
+    "tarde",
+    "jogar",
+    "futebol",
+    "natação",
+    "cinema",
+    "parque",
+    "passear",
+    "encontrar",
+    "amigo"
   ],
-  "vocabulaire_total": 125,
+  "vocabulaire_total": 133,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -151,7 +159,8 @@
     "verbe_ter_present_expressions",
     "expressions_temps_esta_faz_meteorologie",
     "transports_prepositions_de_no_na_para",
-    "heure_que_horas_sao_singulier_pluriel"
+    "heure_que_horas_sao_singulier_pluriel",
+    "verbe_ir_present_irregulier_futur_proche"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -175,11 +184,12 @@
     "culture_cafe_bica_portugal",
     "climat_portugal_expression_estar_nas_tintas",
     "transports_lisbonne_tram_28_elevadores",
-    "horaires_portugais_ponctualite_fixe"
+    "horaires_portugais_ponctualite_fixe",
+    "football_sporting_benfica_rivalite_lisbonne"
   ],
-  "jours_sans_feedback": 31,
+  "jours_sans_feedback": 33,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-23",
+  "derniere_aula_envoyee": "2025-01-24",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
