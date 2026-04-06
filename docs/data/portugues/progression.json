@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A0",
-  "aula_actuelle": 17,
+  "aula_actuelle": 18,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -140,9 +140,16 @@
     "parque",
     "passear",
     "encontrar",
-    "amigo"
+    "amigo",
+    "sonho",
+    "viajar",
+    "mundo",
+    "aprender",
+    "querer",
+    "um dia",
+    "médico"
   ],
-  "vocabulaire_total": 133,
+  "vocabulaire_total": 140,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -160,7 +167,8 @@
     "expressions_temps_esta_faz_meteorologie",
     "transports_prepositions_de_no_na_para",
     "heure_que_horas_sao_singulier_pluriel",
-    "verbe_ir_present_irregulier_futur_proche"
+    "verbe_ir_present_irregulier_futur_proche",
+    "verbe_querer_present_irregulier_projets"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -185,11 +193,12 @@
     "climat_portugal_expression_estar_nas_tintas",
     "transports_lisbonne_tram_28_elevadores",
     "horaires_portugais_ponctualite_fixe",
-    "football_sporting_benfica_rivalite_lisbonne"
+    "football_sporting_benfica_rivalite_lisbonne",
+    "desenrascanco_art_debrouillardise_portugais"
   ],
-  "jours_sans_feedback": 33,
+  "jours_sans_feedback": 35,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-24",
+  "derniere_aula_envoyee": "2025-01-25",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
