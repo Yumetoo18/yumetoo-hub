@@ -1,6 +1,6 @@
 {
-  "niveau_cecrl": "A0",
-  "aula_actuelle": 18,
+  "niveau_cecrl": "A1",
+  "aula_actuelle": 19,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -147,9 +147,17 @@
     "aprender",
     "querer",
     "um dia",
-    "médico"
+    "médico",
+    "saúde",
+    "doente",
+    "dor",
+    "cabeça",
+    "barriga",
+    "febre",
+    "constipação",
+    "farmácia"
   ],
-  "vocabulaire_total": 140,
+  "vocabulaire_total": 148,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -168,7 +176,8 @@
     "transports_prepositions_de_no_na_para",
     "heure_que_horas_sao_singulier_pluriel",
     "verbe_ir_present_irregulier_futur_proche",
-    "verbe_querer_present_irregulier_projets"
+    "verbe_querer_present_irregulier_projets",
+    "expression_douleur_doer_ter_dor_de"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -194,11 +203,12 @@
     "transports_lisbonne_tram_28_elevadores",
     "horaires_portugais_ponctualite_fixe",
     "football_sporting_benfica_rivalite_lisbonne",
-    "desenrascanco_art_debrouillardise_portugais"
+    "desenrascanco_art_debrouillardise_portugais",
+    "pharmacies_portugal_expression_estar_nas_lonas"
   ],
-  "jours_sans_feedback": 35,
+  "jours_sans_feedback": 37,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-25",
+  "derniere_aula_envoyee": "2025-01-26",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
