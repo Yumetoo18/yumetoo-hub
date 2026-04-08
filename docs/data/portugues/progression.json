@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A1",
-  "aula_actuelle": 19,
+  "aula_actuelle": 20,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -155,9 +155,17 @@
     "barriga",
     "febre",
     "constipação",
-    "farmácia"
+    "farmácia",
+    "número",
+    "idade",
+    "ter",
+    "dez",
+    "vinte",
+    "trinta",
+    "quantos",
+    "fazer"
   ],
-  "vocabulaire_total": 148,
+  "vocabulaire_total": 156,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -177,7 +185,8 @@
     "heure_que_horas_sao_singulier_pluriel",
     "verbe_ir_present_irregulier_futur_proche",
     "verbe_querer_present_irregulier_projets",
-    "expression_douleur_doer_ter_dor_de"
+    "expression_douleur_doer_ter_dor_de",
+    "verbe_ter_present_complet_nombres_10_39"
   ],
   "points_forts": [],
   "points_faibles": [],
@@ -204,11 +213,12 @@
     "horaires_portugais_ponctualite_fixe",
     "football_sporting_benfica_rivalite_lisbonne",
     "desenrascanco_art_debrouillardise_portugais",
-    "pharmacies_portugal_expression_estar_nas_lonas"
+    "pharmacies_portugal_expression_estar_nas_lonas",
+    "desenrascanco_art_vivre_portugais_bue"
   ],
-  "jours_sans_feedback": 37,
+  "jours_sans_feedback": 39,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-26",
+  "derniere_aula_envoyee": "2025-01-27",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
