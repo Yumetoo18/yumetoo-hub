@@ -1,5 +1,5 @@
 {
-  "solde": 4.76,
+  "solde": 3.76,
   "capital_initial": 14.5,
   "objectif": 1000.0,
   "benefice_retire": 0.0,
@@ -296,13 +296,35 @@
       "mise": 1.0,
       "gain_potentiel": 1.63,
       "resultat": "EN ATTENTE"
+    },
+    {
+      "date": "2026-04-08",
+      "type": "combine",
+      "selections": [
+        {
+          "equipe": "PSG",
+          "adversaire": "Liverpool",
+          "choix": "Plus de 1.5 buts",
+          "cote": 1.3
+        },
+        {
+          "equipe": "Barcelona",
+          "adversaire": "Atletico Madrid",
+          "choix": "Plus de 1.5 buts",
+          "cote": 1.35
+        }
+      ],
+      "cote": 1.76,
+      "mise": 1.0,
+      "gain_potentiel": 1.76,
+      "resultat": "EN ATTENTE"
     }
   ],
   "stats": {
-    "total_paris": 13,
+    "total_paris": 14,
     "paris_gagnes": 1,
     "paris_perdus": 0,
-    "taux_reussite": 7.7,
+    "taux_reussite": 7.1,
     "roi": 39.7
   }
 }
