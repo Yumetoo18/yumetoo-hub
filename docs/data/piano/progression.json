@@ -1,32 +1,32 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 19,
+  "lecon_actuelle": 20,
   "programme": {
     "phase": "bases",
-    "phase_label": "Les Bases - Reprise",
+    "phase_label": "Les Bases - Reprise Douce",
     "mois": 3,
-    "semaine": 2
+    "semaine": 3
   },
   "morceaux_en_cours": [
-    "Quiz reconnaissance notes - consolidation retour",
-    "Mini-gamme de Do (Do-Ré-Mi) - version ultra-douce",
-    "Sessions 10 minutes max - reconstruction progressive"
+    "Quiz reconnaissance notes - réveil progressif",
+    "Mini-gamme de Do (Do-Ré-Mi) - version 3 notes",
+    "Sessions 10 minutes max - patience et régularité"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Retour progressif après pause longue",
-    "Approche bienveillante sans pression",
-    "Format micro-sessions maintenu"
+    "Retour motivé après longue pause",
+    "Approche ultra-bienveillante maintenue",
+    "Format micro-learning adapté au mode de vie"
   ],
   "points_faibles": [
-    "Pause très prolongée - remise en route nécessaire",
-    "Mémoire des notes à réactiver progressivement",
-    "Habitude de pratique à reconstruire patiemment"
+    "39 jours de pause - remise en route très progressive nécessaire",
+    "Mémoire des notes à réactiver en douceur",
+    "Habitude de pratique à reconstruire sans pression"
   ],
   "exercices_completes": 3,
-  "jours_sans_feedback": 37,
+  "jours_sans_feedback": 39,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2025-01-28",
+  "derniere_lecon_envoyee": "2025-01-29",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
