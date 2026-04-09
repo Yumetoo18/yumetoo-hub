@@ -1,6 +1,6 @@
 {
   "niveau_cecrl": "A1",
-  "aula_actuelle": 20,
+  "aula_actuelle": 21,
   "programme": {
     "phase": "decouverte",
     "phase_label": "Decouverte A0-A1",
@@ -163,9 +163,16 @@
     "vinte",
     "trinta",
     "quantos",
-    "fazer"
+    "fazer",
+    "direita",
+    "esquerda",
+    "em frente",
+    "rua",
+    "seguir",
+    "longe",
+    "perto"
   ],
-  "vocabulaire_total": 156,
+  "vocabulaire_total": 163,
   "grammaire_couverte": [
     "accord_obrigado_obrigada",
     "verbe_ser_present",
@@ -186,13 +193,15 @@
     "verbe_ir_present_irregulier_futur_proche",
     "verbe_querer_present_irregulier_projets",
     "expression_douleur_doer_ter_dor_de",
-    "verbe_ter_present_complet_nombres_10_39"
+    "verbe_ter_present_complet_nombres_10_39",
+    "prepositions_lieu_a_em_de_contractions"
   ],
   "points_forts": [],
   "points_faibles": [],
   "mises_en_situation_faites": [
     "salutations_basiques",
-    "presentation_personnelle"
+    "presentation_personnelle",
+    "demander_directions"
   ],
   "culture_sujets_couverts": [
     "festival_chocolat_obidos_2026",
@@ -214,11 +223,12 @@
     "football_sporting_benfica_rivalite_lisbonne",
     "desenrascanco_art_debrouillardise_portugais",
     "pharmacies_portugal_expression_estar_nas_lonas",
-    "desenrascanco_art_vivre_portugais_bue"
+    "desenrascanco_art_vivre_portugais_bue",
+    "se_perdre_lisbonne_desenrascanco_directions"
   ],
-  "jours_sans_feedback": 39,
+  "jours_sans_feedback": 41,
   "dernier_feedback": null,
-  "derniere_aula_envoyee": "2025-01-27",
+  "derniere_aula_envoyee": "2025-01-28",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - de A0 a C1 en portugais europeen"
 }
