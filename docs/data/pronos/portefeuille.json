@@ -1,5 +1,5 @@
 {
-  "solde": 3.76,
+  "solde": 2.76,
   "capital_initial": 14.5,
   "objectif": 1000.0,
   "benefice_retire": 0.0,
@@ -317,14 +317,14 @@
       "cote": 1.76,
       "mise": 1.0,
       "gain_potentiel": 1.76,
-      "resultat": "EN ATTENTE"
+      "resultat": "LOSS"
     }
   ],
   "stats": {
     "total_paris": 14,
     "paris_gagnes": 1,
-    "paris_perdus": 0,
+    "paris_perdus": 1,
     "taux_reussite": 7.1,
-    "roi": 39.7
+    "roi": -81.0
   }
 }
