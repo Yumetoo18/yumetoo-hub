@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 21,
+  "lecon_actuelle": 22,
   "programme": {
     "phase": "bases",
     "phase_label": "Les Bases - Réveil Musical",
@@ -8,25 +8,25 @@
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz reconnaissance Do-Ré-Mi - réveil après pause",
-    "Mini-gamme de Do (3 notes) - version micro-sessions",
-    "Sessions 5-10 minutes - reconstruction de l'habitude"
+    "Quiz reconnaissance notes - réveil mémoire",
+    "Mini-gamme Do-Ré-Mi (3 notes) - version micro",
+    "Sessions 5-10 minutes - reconstruction habitude"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Retour après pause - motivation intacte",
-    "Approche micro-learning adaptée",
-    "Pas de culpabilité - redémarrage positif"
+    "Retour motivé après 42 jours",
+    "Approche progressive sans culpabilité",
+    "Focus sur micro-sessions réalistes"
   ],
   "points_faibles": [
-    "40 jours de pause - remise en route nécessaire",
-    "Mémoire des notes à réactiver progressivement",
-    "Habitude quotidienne à reconstruire"
+    "Longue pause - remise en route nécessaire",
+    "Mémoire des notes à réactiver",
+    "Habitude quotidienne à reconstruire progressivement"
   ],
   "exercices_completes": 3,
-  "jours_sans_feedback": 41,
+  "jours_sans_feedback": 43,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2025-01-30",
+  "derniere_lecon_envoyee": "2025-01-31",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
