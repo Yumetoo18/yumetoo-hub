@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 22,
+  "lecon_actuelle": 23,
   "programme": {
     "phase": "bases",
     "phase_label": "Les Bases - Réveil Musical",
@@ -8,23 +8,23 @@
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz reconnaissance notes - réveil mémoire",
-    "Mini-gamme Do-Ré-Mi (3 notes) - version micro",
-    "Sessions 5-10 minutes - reconstruction habitude"
+    "Quiz reconnaissance Do-Ré-Mi - réveil progressif",
+    "Mini-mélodie 3 notes - reconstruction doigtés",
+    "Sessions 5-10 minutes - retour en douceur"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Retour motivé après 42 jours",
-    "Approche progressive sans culpabilité",
-    "Focus sur micro-sessions réalistes"
+    "Retour motivé après longue pause",
+    "Accepte approche progressive sans pression",
+    "Focus réaliste sur micro-sessions"
   ],
   "points_faibles": [
-    "Longue pause - remise en route nécessaire",
-    "Mémoire des notes à réactiver",
-    "Habitude quotidienne à reconstruire progressivement"
+    "44 jours d'arrêt - remise en route nécessaire",
+    "Mémoire des notes à réactiver progressivement",
+    "Habitude quotidienne complètement à reconstruire"
   ],
   "exercices_completes": 3,
-  "jours_sans_feedback": 43,
+  "jours_sans_feedback": 45,
   "dernier_feedback": null,
   "derniere_lecon_envoyee": "2025-01-31",
   "historique_feedback": [],
