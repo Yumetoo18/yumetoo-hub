@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 23,
+  "lecon_actuelle": 24,
   "programme": {
     "phase": "bases",
     "phase_label": "Les Bases - Réveil Musical",
@@ -9,8 +9,8 @@
   },
   "morceaux_en_cours": [
     "Quiz reconnaissance Do-Ré-Mi - réveil progressif",
-    "Mini-mélodie 3 notes - reconstruction doigtés",
-    "Sessions 5-10 minutes - retour en douceur"
+    "Micro-mélodie Do-Ré-Mi - retour en douceur",
+    "Sessions 5-10 minutes - reconstruction habitudes"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
@@ -19,12 +19,12 @@
     "Focus réaliste sur micro-sessions"
   ],
   "points_faibles": [
-    "44 jours d'arrêt - remise en route nécessaire",
+    "46 jours d'arrêt - remise en route nécessaire",
     "Mémoire des notes à réactiver progressivement",
     "Habitude quotidienne complètement à reconstruire"
   ],
   "exercices_completes": 3,
-  "jours_sans_feedback": 45,
+  "jours_sans_feedback": 47,
   "dernier_feedback": null,
   "derniere_lecon_envoyee": "2025-01-31",
   "historique_feedback": [],
