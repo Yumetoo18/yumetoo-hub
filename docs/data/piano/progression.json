@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 26,
+  "lecon_actuelle": 27,
   "programme": {
     "phase": "bases",
     "phase_label": "Les Bases - Réveil Musical",
@@ -8,27 +8,28 @@
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz reconnaissance notes - réveil cérébral (session 2)",
-    "Micro-mélodie Do-Ré-Mi - reconstruction motricité (consolidation)",
-    "Sessions 5 minutes quotidiennes - reconstruction habitude"
+    "Quiz reconnaissance notes Do-Sol - révision progressive",
+    "Micro-mélodie Do-Ré-Mi main droite - reconstruction doigtés",
+    "Sessions courtes quotidiennes - reconstruction habitude piano"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Retour après pause longue - courage de reprendre",
-    "Accepte approche progressive sans pression",
-    "Focus réaliste sur micro-sessions",
-    "Conscience de l'importance de la régularité"
+    "Retour après pause longue - persévérance remarquable",
+    "Accepte approche progressive de réveil musical",
+    "Focus sur micro-sessions réalistes",
+    "Conscience de l'importance de reconstruire les bases"
   ],
   "points_faibles": [
-    "50 jours d'arrêt - remise en route nécessaire",
-    "Mémoire des notes à réactiver progressivement",
-    "Habitude quotidienne complètement à reconstruire",
-    "Risque de découragement si objectifs trop élevés"
+    "52 jours d'arrêt - mémoire musicale à réactiver progressivement",
+    "Reconnaissance des notes probablement ralentie",
+    "Doigtés et position des mains à rappeler",
+    "Habitude de pratique quotidienne complètement à reconstruire",
+    "Risque de découragement si progression trop rapide"
   ],
   "exercices_completes": 3,
-  "jours_sans_feedback": 51,
+  "jours_sans_feedback": 53,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2025-01-31",
+  "derniere_lecon_envoyee": "2026-01-02",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
