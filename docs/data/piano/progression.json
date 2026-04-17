@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 28,
+  "lecon_actuelle": 29,
   "programme": {
     "phase": "bases",
     "phase_label": "Les Bases - Réveil Musical",
@@ -8,28 +8,28 @@
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz reconnaissance notes Do-Sol - révision active",
-    "Micro-mélodie Do-Ré-Mi - reconstruction doigtés main droite",
-    "Sessions courtes 15min - reconstruction habitude quotidienne"
+    "Quiz reconnaissance Do-Mi-Sol - révision post-pause",
+    "Micro-mélodie Do-Ré-Mi - reconstruction progressive après 56j d'arrêt",
+    "Sessions micro 10-15min - reconstruction habitude sans pression"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Motivation de reprise après longue pause",
-    "Accepte approche progressive de réveil musical",
-    "Comprend l'importance des micro-sessions",
-    "Persévérance dans la reconstruction des bases"
+    "Revient après une longue pause - signe de motivation durable",
+    "Comprend l'approche progressive de reconstruction",
+    "A déjà eu une base de travail (28 leçons précédentes)",
+    "Accepte l'idée des micro-sessions"
   ],
   "points_faibles": [
-    "52+ jours d'arrêt - mémoire musicale à réactiver progressivement",
-    "Reconnaissance des notes probablement ralentie",
-    "Doigtés et position des mains à rappeler avec patience",
-    "Habitude de pratique quotidienne à reconstruire étape par étape",
-    "Besoin de sessions très courtes pour éviter découragement"
+    "56+ jours d'arrêt - mémoire musicale endormie",
+    "Reconnaissance des notes à réactiver complètement",
+    "Coordination main-oeil probablement à reconstruire",
+    "Risque de découragement si trop ambitieux trop vite",
+    "Habitude quotidienne complètement à refaire"
   ],
   "exercices_completes": 3,
-  "jours_sans_feedback": 55,
+  "jours_sans_feedback": 57,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2026-01-16",
+  "derniere_lecon_envoyee": "2026-01-17",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
