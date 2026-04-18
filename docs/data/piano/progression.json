@@ -1,35 +1,35 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 29,
+  "lecon_actuelle": 30,
   "programme": {
     "phase": "bases",
-    "phase_label": "Les Bases - Réveil Musical",
+    "phase_label": "Les Bases - Réveil Musical Post-Pause",
     "mois": 3,
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz reconnaissance Do-Mi-Sol - révision post-pause",
-    "Micro-mélodie Do-Ré-Mi - reconstruction progressive après 56j d'arrêt",
-    "Sessions micro 10-15min - reconstruction habitude sans pression"
+    "Quiz reconnaissance Do-Mi-Sol - phase réveil doux",
+    "Micro-mélodie Do-Ré-Mi - reconstruction ultra-progressive",
+    "Sessions micro 10-15min - priorité absolue reconstruction habitude"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Revient après une longue pause - signe de motivation durable",
-    "Comprend l'approche progressive de reconstruction",
-    "A déjà eu une base de travail (28 leçons précédentes)",
-    "Accepte l'idée des micro-sessions"
+    "Revient après pause longue - motivation remarquable",
+    "A accepté l'approche micro-sessions progressive",
+    "Base théorique Do-Mi-Sol encore en mémoire (à réactiver)",
+    "28 leçons d'acquis dormants à réveiller progressivement"
   ],
   "points_faibles": [
-    "56+ jours d'arrêt - mémoire musicale endormie",
-    "Reconnaissance des notes à réactiver complètement",
-    "Coordination main-oeil probablement à reconstruire",
-    "Risque de découragement si trop ambitieux trop vite",
-    "Habitude quotidienne complètement à refaire"
+    "58 jours d'arrêt - mémoire musicale en mode sommeil profond",
+    "Coordination œil-main complètement à reconstruire",
+    "Risque de vouloir aller trop vite - surveiller frustration",
+    "Habitude quotidienne à recréer de zéro",
+    "Confiance en soi musicale probablement fragile"
   ],
   "exercices_completes": 3,
-  "jours_sans_feedback": 57,
+  "jours_sans_feedback": 59,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2026-01-17",
+  "derniere_lecon_envoyee": "2026-01-18",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
