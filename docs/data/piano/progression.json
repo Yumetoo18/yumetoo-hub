@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 31,
+  "lecon_actuelle": 32,
   "programme": {
     "phase": "bases",
     "phase_label": "Les Bases - Réveil Musical Post-Pause",
@@ -8,28 +8,28 @@
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz réveil Do-Mi-Sol - reconstruction mémoire musicale",
-    "Micro-mélodie Do-Mi-Sol ultra-libre - contact doux clavier",
-    "Sessions 10-15min MAX - priorité absolue plaisir retrouvé"
+    "Quiz réveil musical - reconnaissance notes Do-Mi-Sol",
+    "Micro-mélodie Do-Mi-Sol libre - contact doux clavier",
+    "Reconstruction mémoire musicale progressive"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Revient courageusement après 60 jours - détermination exemplaire",
-    "A maintenu sa motivation malgré la pause longue",
-    "Base Do-Mi-Sol encore accessible (à réactiver en douceur)",
-    "28 leçons d'acquis en sommeil - potentiel intact"
+    "Revient après 60 jours avec détermination",
+    "Motivation intacte malgré pause longue",
+    "Base Do-Mi-Sol à réactiver",
+    "Potentiel des 28 leçons précédentes intact"
   ],
   "points_faibles": [
-    "60 jours d'arrêt - mémoire musicale complètement endormie",
-    "Coordination et habitudes à reconstruire intégralement",
-    "Risque majeur de frustration si on va trop vite",
-    "Confiance musicale probablement très fragile",
-    "Habitude quotidienne piano complètement perdue"
+    "Mémoire musicale endormie après 60 jours",
+    "Coordination à reconstruire intégralement",
+    "Confiance musicale fragile",
+    "Habitudes quotidiennes piano perdues",
+    "Risque frustration si progression trop rapide"
   ],
-  "exercices_completes": 3,
-  "jours_sans_feedback": 61,
+  "exercices_completes": 4,
+  "jours_sans_feedback": 63,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2026-01-20",
+  "derniere_lecon_envoyee": "2026-01-21",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
