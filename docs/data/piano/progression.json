@@ -1,35 +1,35 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 33,
+  "lecon_actuelle": 34,
   "programme": {
     "phase": "bases_revision",
-    "phase_label": "Les Bases - Révision Post-Pause Longue",
+    "phase_label": "Les Bases - Réveil Musical Post-Pause",
     "mois": 3,
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz réveil musical - reconnaissance notes Do-Mi-Sol",
-    "Reconstruction mémoire musicale - mélodie Do-Mi-Sol libre",
-    "Réveil coordination doigts-clavier en douceur"
+    "Réveil musical en douceur - Quiz Do-Mi-Sol",
+    "Mélodie libre Do-Mi-Sol - Improvisation douce",
+    "Reconstruction coordination main droite/gauche très progressive"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Revient après 64 jours avec détermination",
-    "Motivation intacte malgré pause très longue",
-    "Base Do-Mi-Sol en cours de réactivation",
-    "Potentiel des 28 leçons précédentes intact"
+    "Revient après 66 jours - courage exemplaire !",
+    "Motivation intacte pour redémarrer",
+    "Base Do-Mi-Sol en cours de réactivation douce",
+    "Acquis des 28 leçons précédentes à réveiller progressivement"
   ],
   "points_faibles": [
-    "Mémoire musicale endormie après 64 jours",
-    "Coordination à reconstruire très progressivement",
-    "Confiance musicale fragile après pause longue",
-    "Habitudes quotidiennes piano complètement perdues",
-    "Besoin absolut de douceur pour éviter découragement"
+    "Mémoire musicale en hibernation après 66 jours",
+    "Coordination à reconstruire avec extrême douceur",
+    "Confiance musicale fragile - besoin de réussites immédiates",
+    "Habitudes de practice piano complètement à recréer",
+    "Risque de découragement si progression trop rapide"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 65,
+  "jours_sans_feedback": 67,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2026-01-22",
+  "derniere_lecon_envoyee": "2026-01-23",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
