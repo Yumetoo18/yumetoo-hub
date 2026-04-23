@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 34,
+  "lecon_actuelle": 35,
   "programme": {
     "phase": "bases_revision",
     "phase_label": "Les Bases - Réveil Musical Post-Pause",
@@ -8,16 +8,17 @@
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Réveil musical en douceur - Quiz Do-Mi-Sol",
+    "Quiz de réveil - Reconnais tes notes Do-Mi-Sol",
     "Mélodie libre Do-Mi-Sol - Improvisation douce",
     "Reconstruction coordination main droite/gauche très progressive"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Revient après 66 jours - courage exemplaire !",
+    "Revient courageusement après 66 jours - détermination remarquable !",
     "Motivation intacte pour redémarrer",
     "Base Do-Mi-Sol en cours de réactivation douce",
-    "Acquis des 28 leçons précédentes à réveiller progressivement"
+    "Acquis des 28 leçons précédentes à réveiller progressivement",
+    "Approche bienveillante envers soi-même"
   ],
   "points_faibles": [
     "Mémoire musicale en hibernation après 66 jours",
@@ -27,9 +28,9 @@
     "Risque de découragement si progression trop rapide"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 67,
+  "jours_sans_feedback": 69,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2026-01-23",
+  "derniere_lecon_envoyee": "2026-01-24",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
