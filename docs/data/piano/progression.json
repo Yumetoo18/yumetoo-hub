@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 35,
+  "lecon_actuelle": 36,
   "programme": {
     "phase": "bases_revision",
     "phase_label": "Les Bases - Réveil Musical Post-Pause",
@@ -8,27 +8,27 @@
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz de réveil - Reconnais tes notes Do-Mi-Sol",
-    "Mélodie libre Do-Mi-Sol - Improvisation douce",
-    "Reconstruction coordination main droite/gauche très progressive"
+    "Quiz réveil - Notes sur portée cle de sol",
+    "Mélodie libre Do-Mi-Sol - Reconstruction douce main droite",
+    "Premier contact coordination Do grave main gauche + Do-Mi-Sol droite"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Revient courageusement après 66 jours - détermination remarquable !",
-    "Motivation intacte pour redémarrer",
-    "Base Do-Mi-Sol en cours de réactivation douce",
-    "Acquis des 28 leçons précédentes à réveiller progressivement",
-    "Approche bienveillante envers soi-même"
+    "De retour après 70 jours - courage exemplaire !",
+    "Prêt à redémarrer avec motivation",
+    "Base Do-Mi-Sol en cours de réactivation",
+    "Approche progressive et bienveillante",
+    "Accepte le processus de réveil musical"
   ],
   "points_faibles": [
-    "Mémoire musicale en hibernation après 66 jours",
-    "Coordination à reconstruire avec extrême douceur",
-    "Confiance musicale fragile - besoin de réussites immédiates",
-    "Habitudes de practice piano complètement à recréer",
-    "Risque de découragement si progression trop rapide"
+    "Mémoire des notes sur portée à réveiller",
+    "Coordination main droite/gauche endormie",
+    "Habitudes de practice à reconstruire complètement",
+    "Confiance musicale fragile - besoin d'encouragements",
+    "Risque d'impatience - rappeler la progressivité"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 69,
+  "jours_sans_feedback": 71,
   "dernier_feedback": null,
   "derniere_lecon_envoyee": "2026-01-24",
   "historique_feedback": [],
