@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 36,
+  "lecon_actuelle": 37,
   "programme": {
     "phase": "bases_revision",
     "phase_label": "Les Bases - Réveil Musical Post-Pause",
@@ -8,29 +8,29 @@
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz réveil - Notes sur portée cle de sol",
-    "Mélodie libre Do-Mi-Sol - Reconstruction douce main droite",
-    "Premier contact coordination Do grave main gauche + Do-Mi-Sol droite"
+    "Quiz réveil - Notes sur portée clé de sol (consolidation)",
+    "Réveil Do-Mi-Sol - Coordination douce bimanuelle",
+    "Construction habitudes practice post-pause"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "De retour après 70 jours - courage exemplaire !",
-    "Prêt à redémarrer avec motivation",
-    "Base Do-Mi-Sol en cours de réactivation",
-    "Approche progressive et bienveillante",
+    "De retour avec motivation après 72 jours !",
+    "Approche progressive et bienveillante acceptée",
+    "Prêt à reconstruire les bases doucement",
+    "Objectif 5 ans maintenu - vision long terme",
     "Accepte le processus de réveil musical"
   ],
   "points_faibles": [
-    "Mémoire des notes sur portée à réveiller",
-    "Coordination main droite/gauche endormie",
+    "Mémoire des notes à réactiver progressivement",
+    "Coordination main droite/gauche à réveiller",
     "Habitudes de practice à reconstruire complètement",
-    "Confiance musicale fragile - besoin d'encouragements",
-    "Risque d'impatience - rappeler la progressivité"
+    "Risque d'impatience - rappeler la progressivité",
+    "Confiance musicale fragile - besoin d'encouragements constants"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 71,
+  "jours_sans_feedback": 72,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2026-01-24",
+  "derniere_lecon_envoyee": "2026-01-27",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
