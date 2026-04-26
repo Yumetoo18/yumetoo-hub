@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 37,
+  "lecon_actuelle": 38,
   "programme": {
     "phase": "bases_revision",
     "phase_label": "Les Bases - Réveil Musical Post-Pause",
@@ -8,29 +8,29 @@
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz réveil - Notes sur portée clé de sol (consolidation)",
-    "Réveil Do-Mi-Sol - Coordination douce bimanuelle",
-    "Construction habitudes practice post-pause"
+    "Quiz réveil - Notes sur portée clé de sol (réactivation mémoire)",
+    "Réveil Do-Mi-Sol - Coordination bimanuelle ultra-douce",
+    "Reconstruction habitudes practice quotidienne"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
     "De retour avec motivation après 72 jours !",
     "Approche progressive et bienveillante acceptée",
     "Prêt à reconstruire les bases doucement",
-    "Objectif 5 ans maintenu - vision long terme",
-    "Accepte le processus de réveil musical"
+    "Objectif 5 ans maintenu - excellente vision long terme",
+    "Accepte le processus de réveil musical étape par étape"
   ],
   "points_faibles": [
-    "Mémoire des notes à réactiver progressivement",
-    "Coordination main droite/gauche à réveiller",
-    "Habitudes de practice à reconstruire complètement",
-    "Risque d'impatience - rappeler la progressivité",
-    "Confiance musicale fragile - besoin d'encouragements constants"
+    "Mémoire des notes à réactiver très progressivement",
+    "Coordination main droite/gauche endormie - réveil en douceur",
+    "Habitudes de practice à reconstruire complètement - micro-sessions",
+    "Risque d'impatience après pause - rappeler la progressivité constamment",
+    "Confiance musicale fragile - encouragements constants nécessaires"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 72,
+  "jours_sans_feedback": 74,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2026-01-27",
+  "derniere_lecon_envoyee": "2027-01-28",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
