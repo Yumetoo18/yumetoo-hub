@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 39,
+  "lecon_actuelle": 40,
   "programme": {
     "phase": "bases_revision",
     "phase_label": "Les Bases - Réveil Musical Post-Pause",
@@ -8,29 +8,29 @@
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz réveil - Notes sur portée clé de sol (reconnaissance basique)",
+    "Quiz réveil - Notes sur portée clé de sol (consolidation douce)",
     "Réveil Do-Mi-Sol - Coordination bimanuelle ultra-progressive",
-    "Reconstruction micro-sessions quotidiennes (10-15 min)"
+    "Micro-sessions quotidiennes (10-15 min) - reconstruction habitudes"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "De retour après pause - courage de reprendre !",
-    "Approche ultra-progressive acceptée",
-    "Objectif 5 ans maintenu - excellente vision",
-    "Prêt à reconstruire patiemment les automatismes",
-    "Accepte le processus de réveil musical étape par étape"
+    "Objectif 5 ans maintenu - vision excellente sur long terme",
+    "Approche ultra-progressive bien acceptée",
+    "Courage de reprendre après pause - mentalité positive",
+    "Processus de réveil musical étape par étape",
+    "Patience et bienveillance envers soi-même"
   ],
   "points_faibles": [
-    "Mémoire des notes endormie - réveil très progressif nécessaire",
-    "Coordination bimanuelle à réactiver en micro-étapes",
-    "Habitudes de practice à reconstruire - micro-sessions prioritaires",
-    "Possibles frustrations de début - encouragements constants",
-    "Confiance musicale fragile après pause - bienveillance maximale"
+    "77 jours sans feedback - réveil très progressif nécessaire",
+    "Mémoire des notes à réactiver en micro-étapes",
+    "Coordination bimanuelle endormie - patience requise",
+    "Habitudes de practice à reconstruire complètement",
+    "Confiance musicale fragile - encouragements constants nécessaires"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 76,
+  "jours_sans_feedback": 78,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2027-01-29",
+  "derniere_lecon_envoyee": "2027-01-30",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
