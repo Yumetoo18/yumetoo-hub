@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 41,
+  "lecon_actuelle": 42,
   "programme": {
     "phase": "bases_revision",
     "phase_label": "Les Bases - Réveil Musical Post-Pause",
@@ -8,29 +8,29 @@
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz réveil doux - Reconnaissance Do sur portée",
-    "Micro-Réveil Do-Mi-Sol - Ultra-progressive (main droite seule)",
-    "Reconstruction habitudes - sessions 10min acceptables"
+    "Quiz réveil doux - Reconnaissance Do-Mi-Sol sur portée",
+    "Micro-Réveil Position Do au piano - Ultra-progressive",
+    "Reconstruction habitudes - sessions 10min parfaites"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Objectif 5 ans maintenu - excellente vision long terme",
-    "Courage de reprendre après 79 jours - mentalité championne",
-    "Approche micro-sessions parfaitement adaptée",
-    "Bienveillance envers soi-même - clé du succès",
-    "Réveil progressif étape par étape"
+    "Objectif 5 ans maintenu - vision long terme exceptionnelle",
+    "Retour après 80 jours - persévérance de champion",
+    "Approche micro-sessions idéale pour la reprise",
+    "Bienveillance envers soi-même - mentalité gagnante",
+    "Réveil progressif respecté"
   ],
   "points_faibles": [
-    "79 jours sans feedback - réveil très doux nécessaire",
+    "80 jours sans feedback - réveil très progressif nécessaire",
     "Mémoire des notes endormie - révision Do-Mi-Sol basique",
-    "Coordination bimanuelle à réveiller progressivement",
+    "Contact piano à retrouver en douceur",
     "Confiance musicale fragile - encouragements constants",
     "Habitudes de practice à reconstruire patiemment"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 79,
+  "jours_sans_feedback": 81,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2027-01-30",
+  "derniere_lecon_envoyee": "2027-01-31",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
