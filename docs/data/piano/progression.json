@@ -1,36 +1,36 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 42,
+  "lecon_actuelle": 43,
   "programme": {
-    "phase": "bases_revision",
-    "phase_label": "Les Bases - Réveil Musical Post-Pause",
+    "phase": "retour_progressif",
+    "phase_label": "Retour Progressif - Réveil Musical",
     "mois": 3,
     "semaine": 4
   },
   "morceaux_en_cours": [
-    "Quiz réveil doux - Reconnaissance Do-Mi-Sol sur portée",
-    "Micro-Réveil Position Do au piano - Ultra-progressive",
-    "Reconstruction habitudes - sessions 10min parfaites"
+    "Quiz réveil Do-Mi-Sol - reconnaissance portée",
+    "Micro-Session Retour Do-Mi-Sol au piano",
+    "Reconstruction habitudes - objectif 10-15min/jour"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Objectif 5 ans maintenu - vision long terme exceptionnelle",
-    "Retour après 80 jours - persévérance de champion",
-    "Approche micro-sessions idéale pour la reprise",
-    "Bienveillance envers soi-même - mentalité gagnante",
-    "Réveil progressif respecté"
+    "Retour après 82 jours - persévérance exceptionnelle",
+    "Objectif 5 ans maintenu - vision claire",
+    "Approche micro-sessions parfaite pour la reprise",
+    "Bienveillance envers soi - mentalité positive",
+    "Acceptation du réveil progressif"
   ],
   "points_faibles": [
-    "80 jours sans feedback - réveil très progressif nécessaire",
-    "Mémoire des notes endormie - révision Do-Mi-Sol basique",
-    "Contact piano à retrouver en douceur",
-    "Confiance musicale fragile - encouragements constants",
-    "Habitudes de practice à reconstruire patiemment"
+    "82 jours de pause - mémoire musicale à réveiller",
+    "Notes Do-Mi-Sol à consolider en douceur",
+    "Position des mains à retrouver progressivement",
+    "Confiance au piano à reconstruire patiemment",
+    "Habitudes de practice à réinstaller petit à petit"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 81,
+  "jours_sans_feedback": 83,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2027-01-31",
+  "derniere_lecon_envoyee": "2025-01-01",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
