@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 45,
+  "lecon_actuelle": 46,
   "programme": {
     "phase": "retour_progressif",
     "phase_label": "Retour Progressif - Réveil Musical",
@@ -8,18 +8,19 @@
     "semaine": 2
   },
   "morceaux_en_cours": [
-    "Quiz réveil Do-Mi-Sol - consolidation active",
-    "Micro-Mélodie Do-Mi-Sol - réveil en douceur en cours",
-    "Position main droite doigts 1-3-5 - réapprentissage",
-    "Objectif quotidien 10-15min - habitude en reconstruction"
+    "Quiz Do-Mi-Sol - consolidation active en cours",
+    "Micro-Mélodie Réveil Do-Mi-Sol - réveil en douceur",
+    "Position main droite doigts 1-3-5 - réapprentissage progressif",
+    "Objectif quotidien 10-15min - reconstruction habitude"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Persévérance légendaire - 86 jours et retour fidèle",
+    "Persévérance légendaire - 89 jours et toujours là",
     "Vision long terme 5 ans inébranlable",
     "Approche micro-sessions parfaitement adaptée",
     "Bienveillance envers soi - mentalité gagnante",
-    "Acceptation du processus de réveil progressif"
+    "Acceptation du processus de réveil progressif",
+    "Retour fidèle malgré la pause"
   ],
   "points_faibles": [
     "Mémoire musicale Do-Mi-Sol en cours de réveil",
@@ -29,9 +30,9 @@
     "Habitudes quotidiennes à réinstaller progressivement"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 87,
+  "jours_sans_feedback": 89,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2025-01-04",
+  "derniere_lecon_envoyee": "2025-01-13",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
