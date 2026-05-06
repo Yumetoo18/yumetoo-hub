@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 47,
+  "lecon_actuelle": 48,
   "programme": {
     "phase": "retour_progressif",
     "phase_label": "Retour Progressif - Réveil Musical",
@@ -8,28 +8,28 @@
     "semaine": 2
   },
   "morceaux_en_cours": [
-    "Quiz Do-Mi-Sol - réveil interactif en cours",
-    "Gamme de Do version micro-session - retour en douceur",
-    "Position main droite Do-Ré-Mi - réapprentissage progressif",
-    "Objectif quotidien 5-10min - reconstruction ultra-douce"
+    "Position Do-Ré-Mi main droite - réveil ultra-doux",
+    "Sessions micro 5-10min - reconstruction neurologique",
+    "Quiz musical quotidien - réactivation mémoire",
+    "Objectif : régularité avant performance"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Persévérance légendaire - 90 jours et de retour !",
-    "Vision long terme 5 ans inébranlable",
-    "Fidélité au processus malgré les pauses",
-    "Capacité à revenir sans culpabilité",
-    "Approche micro-sessions parfaitement adaptée"
+    "Retour héroïque après 92 jours - mental de champion !",
+    "Vision long terme 5 ans toujours vivace",
+    "Approche sans culpabilité - mentalité parfaite",
+    "Acceptation du processus de reconstruction",
+    "Stratégie micro-sessions intelligente"
   ],
   "points_faibles": [
-    "Mémoire musicale en phase de réveil",
-    "Position des mains à retrouver patiemment",
-    "Lecture de notes à réactiver progressivement",
-    "Confiance au piano à reconstruire note par note",
-    "Routine quotidienne à réinstaller en douceur"
+    "Connexions neuronales pianistiques à réveiller",
+    "Mémoire des positions à réactiver patiemment",
+    "Confiance au clavier à reconstruire progressivement",
+    "Routine quotidienne à réinstaller en douceur",
+    "Patience avec soi-même pendant la reprise"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 91,
+  "jours_sans_feedback": 93,
   "dernier_feedback": null,
   "derniere_lecon_envoyee": "2025-01-14",
   "historique_feedback": [],
