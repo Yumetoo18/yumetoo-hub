@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 48,
+  "lecon_actuelle": 49,
   "programme": {
     "phase": "retour_progressif",
     "phase_label": "Retour Progressif - Réveil Musical",
@@ -8,30 +8,30 @@
     "semaine": 2
   },
   "morceaux_en_cours": [
-    "Position Do-Ré-Mi main droite - réveil ultra-doux",
-    "Sessions micro 5-10min - reconstruction neurologique",
-    "Quiz musical quotidien - réactivation mémoire",
-    "Objectif : régularité avant performance"
+    "Quiz reconnaissance notes - réactivation mémoire visuelle",
+    "Position Do-Ré-Mi réveil digital - reconstruction douce",
+    "Sessions micro 5-10min - discipline sans pression",
+    "Objectif : régularité neurologique avant performance"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Retour héroïque après 92 jours - mental de champion !",
-    "Vision long terme 5 ans toujours vivace",
-    "Approche sans culpabilité - mentalité parfaite",
-    "Acceptation du processus de reconstruction",
-    "Stratégie micro-sessions intelligente"
+    "Retour héroïque après 94 jours - persévérance exceptionnelle !",
+    "Vision long terme 5 ans toujours solide",
+    "Approche bienveillante envers soi-même",
+    "Acceptation du processus de reconstruction neurologique",
+    "Stratégie micro-sessions = intelligence émotionnelle"
   ],
   "points_faibles": [
-    "Connexions neuronales pianistiques à réveiller",
-    "Mémoire des positions à réactiver patiemment",
-    "Confiance au clavier à reconstruire progressivement",
-    "Routine quotidienne à réinstaller en douceur",
-    "Patience avec soi-même pendant la reprise"
+    "Connexions neuronales pianistiques en réveil progressif",
+    "Mémoire des positions à réactiver avec patience",
+    "Confiance au clavier à reconstruire jour après jour",
+    "Routine quotidienne à réinstaller sans culpabilité",
+    "Attentes personnelles à ajuster temporairement"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 93,
+  "jours_sans_feedback": 95,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2025-01-14",
+  "derniere_lecon_envoyee": "2025-01-15",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
