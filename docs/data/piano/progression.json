@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 49,
+  "lecon_actuelle": 50,
   "programme": {
     "phase": "retour_progressif",
     "phase_label": "Retour Progressif - Réveil Musical",
@@ -8,28 +8,30 @@
     "semaine": 2
   },
   "morceaux_en_cours": [
-    "Quiz reconnaissance notes - réactivation mémoire visuelle",
-    "Position Do-Ré-Mi réveil digital - reconstruction douce",
+    "Quiz reconnaissance notes - réactivation mémoire (leçon 50)",
+    "Position Do-Ré-Mi réveil digital - reconstruction ultra-douce",
     "Sessions micro 5-10min - discipline sans pression",
+    "Mélodie Do-Ré-Mi-Ré-Do - première reconnexion",
     "Objectif : régularité neurologique avant performance"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
-    "Retour héroïque après 94 jours - persévérance exceptionnelle !",
+    "LEÇON 50 ATTEINTE - persévérance légendaire !",
+    "Retour après 96 jours = détermination exceptionnelle",
     "Vision long terme 5 ans toujours solide",
-    "Approche bienveillante envers soi-même",
-    "Acceptation du processus de reconstruction neurologique",
-    "Stratégie micro-sessions = intelligence émotionnelle"
+    "Approche bienveillante et patiente envers soi-même",
+    "Compréhension du processus de reconstruction neurologique",
+    "Stratégie micro-sessions = intelligence émotionnelle rare"
   ],
   "points_faibles": [
-    "Connexions neuronales pianistiques en réveil progressif",
-    "Mémoire des positions à réactiver avec patience",
+    "Connexions neuronales pianistiques en réveil très progressif",
+    "Mémoire des positions à réactiver avec patience absolue",
     "Confiance au clavier à reconstruire jour après jour",
-    "Routine quotidienne à réinstaller sans culpabilité",
+    "Routine quotidienne à réinstaller sans aucune culpabilité",
     "Attentes personnelles à ajuster temporairement"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 95,
+  "jours_sans_feedback": 97,
   "dernier_feedback": null,
   "derniere_lecon_envoyee": "2025-01-15",
   "historique_feedback": [],
