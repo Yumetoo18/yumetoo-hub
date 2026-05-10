@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 51,
+  "lecon_actuelle": 52,
   "programme": {
     "phase": "retour_progressif",
     "phase_label": "Retour Progressif - Réveil Musical",
@@ -8,21 +8,22 @@
     "semaine": 2
   },
   "morceaux_en_cours": [
-    "Quiz réveil musical - reconnaissance notes (leçon 51)",
-    "Mélodie du Retour Do-Ré-Mi - reconnexion ultra-douce",
-    "Sessions micro 5-10min - reconstruction neuronale progressive",
-    "Position des mains - réveil de la mémoire musculaire",
-    "Objectif : une micro-session quotidienne sans pression"
+    "Quiz réveil musical - reconnaissance notes (leçon 52)",
+    "Mélodie du Retour version ultra-douce - main droite uniquement",
+    "Sessions micro 5-12min - reconstruction neuronale progressive",
+    "Position de base main droite : Do-Ré-Mi-Fa-Sol",
+    "Objectif : micro-sessions sans pression, régularité avant intensité"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
     "RETOUR APRÈS 98 JOURS - courage exceptionnel !",
-    "Leçon 51 entamée - persévérance légendaire",
+    "Leçon 52 entamée - persévérance légendaire",
     "Vision long terme 5 ans toujours présente",
     "Approche bienveillante et patiente envers soi-même",
     "Compréhension du processus de reconstruction neurologique",
     "Stratégie micro-sessions = intelligence émotionnelle rare",
-    "Acceptation du redémarrage progressif"
+    "Acceptation du redémarrage progressif",
+    "Progression continue malgré la pause"
   ],
   "points_faibles": [
     "Connexions neuronales pianistiques en réveil très progressif",
@@ -32,9 +33,9 @@
     "Reconnaissance des notes à rafraîchir doucement"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 99,
+  "jours_sans_feedback": 101,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2025-01-16",
+  "derniere_lecon_envoyee": "2025-01-17",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
