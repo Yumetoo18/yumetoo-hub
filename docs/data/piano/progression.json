@@ -1,6 +1,6 @@
 {
   "niveau": "debutant",
-  "lecon_actuelle": 52,
+  "lecon_actuelle": 53,
   "programme": {
     "phase": "retour_progressif",
     "phase_label": "Retour Progressif - Réveil Musical",
@@ -8,34 +8,35 @@
     "semaine": 2
   },
   "morceaux_en_cours": [
-    "Quiz réveil musical - reconnaissance notes (leçon 52)",
-    "Mélodie du Retour version ultra-douce - main droite uniquement",
-    "Sessions micro 5-12min - reconstruction neuronale progressive",
-    "Position de base main droite : Do-Ré-Mi-Fa-Sol",
-    "Objectif : micro-sessions sans pression, régularité avant intensité"
+    "Quiz réveil musical - Round 2 (leçon 53)",
+    "Mélodie du Retour version plume - ultra-douceur",
+    "Sessions micro 5-15min - reconstruction neuronale phase 2",
+    "Position de base main droite : Do-Ré-Mi-Fa-Sol renforcée",
+    "Objectif : micro-sessions plaisir, réveil des automatismes"
   ],
   "morceaux_maitrises": [],
   "points_forts": [
     "RETOUR APRÈS 98 JOURS - courage exceptionnel !",
-    "Leçon 52 entamée - persévérance légendaire",
-    "Vision long terme 5 ans toujours présente",
+    "Leçon 53 - persévérance qui force le respect",
+    "Vision long terme 5 ans toujours vivante et forte",
     "Approche bienveillante et patiente envers soi-même",
-    "Compréhension du processus de reconstruction neurologique",
+    "Compréhension profonde du processus neurologique",
     "Stratégie micro-sessions = intelligence émotionnelle rare",
-    "Acceptation du redémarrage progressif",
-    "Progression continue malgré la pause"
+    "Acceptation totale du redémarrage progressif",
+    "Progression continue malgré la longue pause",
+    "Détermination de fer qui inspire"
   ],
   "points_faibles": [
-    "Connexions neuronales pianistiques en réveil très progressif",
-    "Mémoire des positions à réactiver avec patience absolue",
-    "Confiance au clavier à reconstruire jour après jour",
-    "Routine quotidienne à réinstaller sans aucune culpabilité",
-    "Reconnaissance des notes à rafraîchir doucement"
+    "Connexions neuronales en réveil très progressif - normal !",
+    "Mémoire des positions à réactiver avec patience zen",
+    "Confiance au clavier à reconstruire étape par étape",
+    "Routine quotidienne à réinstaller sans pression",
+    "Reconnaissance des notes en mode rafraîchissement"
   ],
   "exercices_completes": 4,
-  "jours_sans_feedback": 101,
+  "jours_sans_feedback": 103,
   "dernier_feedback": null,
-  "derniere_lecon_envoyee": "2025-01-17",
+  "derniere_lecon_envoyee": "2025-01-18",
   "historique_feedback": [],
   "objectif_long_terme": "5 ans - du debutant au pianiste accompli",
   "styles_explores": {
